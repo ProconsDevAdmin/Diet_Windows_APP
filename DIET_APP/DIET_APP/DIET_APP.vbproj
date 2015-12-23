@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E548222A-2F28-468C-B785-5BCF3CAB7715}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DIET_APP.My.MyApplication</StartupObject>
+    <RootNamespace>DIET_APP</RootNamespace>
+    <AssemblyName>DIET_APP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DIET_APP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DIET_APP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bin\Debug\MenuIcons\A.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bx_UI_COM_ErrorMsg">
+      <HintPath>bin\Debug\Bx_UI_COM_ErrorMsg.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UXUTIL">
+      <HintPath>bin\Debug\UXUTIL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessLayer\SQLDataAccess.vb" />
+    <Compile Include="CFL\ChoosefromList.designer.vb">
+      <DependentUpon>ChoosefromList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CFL\ChoosefromList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CFL\MsgBox.Designer.vb">
+      <DependentUpon>MsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CFL\MsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PSWizard.Designer.vb">
+      <DependentUpon>PSWizard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PSWizard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\Login.designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="System\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="System\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CFL\ChoosefromList.resx">
+      <DependentUpon>ChoosefromList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CFL\MsgBox.resx">
+      <DependentUpon>MsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSWizard.resx">
+      <DependentUpon>PSWizard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="bin\Debug\DIET_APP.exe.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SAPbobsCOM">
+      <Guid>{FC8030BE-F5D2-4B8E-8F92-44228FE30090}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\DIET_APP.exe" />
+    <Content Include="bin\Debug\DIET_APP.pdb" />
+    <Content Include="bin\Debug\MenuIcons\A.ico" />
+    <Content Include="bin\Debug\MenuIcons\B.ico" />
+    <Content Include="bin\Debug\MenuIcons\C.ico" />
+    <Content Include="bin\Debug\MenuIcons\D.ico" />
+    <Content Include="bin\Debug\MenuIcons\E.ico" />
+    <Content Include="bin\Debug\MenuIcons\F.ico" />
+    <Content Include="bin\Debug\MenuIcons\G.ico" />
+    <Content Include="bin\Debug\MenuIcons\H.ico" />
+    <Content Include="bin\Debug\MenuIcons\I.ico" />
+    <Content Include="bin\Debug\MenuIcons\J.ico" />
+    <Content Include="bin\Debug\MenuIcons\K.ico" />
+    <Content Include="bin\Debug\MenuIcons\L.ico" />
+    <Content Include="bin\Debug\MenuIcons\M.ico" />
+    <Content Include="bin\Debug\MenuIcons\N.ico" />
+    <Content Include="bin\Debug\MenuIcons\O.ico" />
+    <Content Include="bin\Debug\MenuIcons\P.ico" />
+    <Content Include="bin\Debug\MenuIcons\Q.ico" />
+    <Content Include="bin\Debug\MenuIcons\R.ico" />
+    <Content Include="bin\Debug\MenuIcons\S.ico" />
+    <Content Include="bin\Debug\MenuIcons\T.ico" />
+    <Content Include="bin\Debug\MenuIcons\U.ico" />
+    <Content Include="bin\Debug\MenuIcons\V.ico" />
+    <Content Include="bin\Debug\MenuIcons\W.ico" />
+    <Content Include="bin\Debug\MenuIcons\Y.ico" />
+    <Content Include="bin\Debug\MenuIcons\Z.ico" />
+    <Content Include="bin\Debug\MenuIcons\ZA.ico" />
+    <Content Include="bin\Debug\MenuIcons\ZB.ico" />
+    <Content Include="bin\Debug\MenuIcons\ZC.ico" />
+    <Content Include="bin\Debug\MenuIcons\ZD.ico" />
+    <Content Include="bin\Debug\MenuIcons\ZE.ico" />
+    <Content Include="bin\Debug\MenuIcons\ZF.ico" />
+    <Content Include="bin\Debug\MenuIcons\ZH.ico" />
+    <Content Include="bin\Debug\MenuIcons\ZI.ico" />
+    <Content Include="Images\Close.gif" />
+    <Content Include="Images\Lock.gif" />
+    <Content Include="Resources\A.ico" />
+    <Content Include="Resources\B.ico" />
+    <Content Include="Resources\Back.gif" />
+    <Content Include="Resources\Close.gif" />
+    <Content Include="Resources\List.gif" />
+    <Content Include="Resources\Lock.gif" />
+    <Content Include="Resources\Next.gif" />
+    <Content Include="Resources\OK.gif" />
+    <Content Include="Resources\Save.gif" />
+    <None Include="Resources\Expand.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,27 @@
+======
+Log Time : 09:48:10 Message Stack : 
+Message ---> Deleted row information cannot be accessed through the row.
+HelpLink ---> 
+Source ---> System.Data
+StackTrace --->    at System.Data.DataRow.GetDefaultRecord()
+   at System.Data.DataRow.get_Item(String columnName)
+   at DIET_APP.PSWizard.FillSelection(String CurrentItem, String value1, String value2) in D:\Project\procons4it\DIET\DIET_APP\DIET_APP_LATEST\DIET_APP\DIET_APP\PSWizard.vb:line 4375
+TargetSite ---> Int32 GetDefaultRecord()
+======
+Log Time : 09:48:16 Message Stack : 
+Message ---> Deleted row information cannot be accessed through the row.
+HelpLink ---> 
+Source ---> System.Data
+StackTrace --->    at System.Data.DataRow.GetDefaultRecord()
+   at System.Data.DataRow.get_Item(String columnName)
+   at DIET_APP.PSWizard.FillSelection(String CurrentItem, String value1, String value2) in D:\Project\procons4it\DIET\DIET_APP\DIET_APP_LATEST\DIET_APP\DIET_APP\PSWizard.vb:line 4375
+TargetSite ---> Int32 GetDefaultRecord()
+======
+Log Time : 09:48:55 Message Stack : 
+Message ---> Deleted row information cannot be accessed through the row.
+HelpLink ---> 
+Source ---> System.Data
+StackTrace --->    at System.Data.DataRow.GetDefaultRecord()
+   at System.Data.DataRow.get_Item(String columnName)
+   at DIET_APP.PSWizard.FillSelection(String CurrentItem, String value1, String value2) in D:\Project\procons4it\DIET\DIET_APP\DIET_APP_LATEST\DIET_APP\DIET_APP\PSWizard.vb:line 4375
+TargetSite ---> Int32 GetDefaultRecord()
