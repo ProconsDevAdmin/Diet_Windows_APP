@@ -54,6 +54,7 @@ Public Class PSWizard
     Dim oGridRow As Integer
     Dim acStringFoodList As New AutoCompleteStringCollection()
     Dim acRemarks As New AutoCompleteStringCollection()
+    'Dim oRowIndex As Integer = 0
 #End Region
 
 #Region "Events"
@@ -708,6 +709,7 @@ Public Class PSWizard
         Try
             popUpCfl(sender, e)
         Catch ex As Exception
+            Trace_DIET_App_Error(ex)
             MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
         End Try
     End Sub
@@ -1188,6 +1190,8 @@ Public Class PSWizard
                     End If
                 Next
             End If
+
+
 
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -1937,7 +1941,10 @@ Public Class PSWizard
     Private Sub dgv_BF_R_CurrentCellDirtyStateChanged(sender As System.Object, e As System.EventArgs) Handles dgv_BF_R.CurrentCellDirtyStateChanged
         Try
             If dgv_BF_R.IsCurrentCellDirty Then
-                dgv_BF_R.CommitEdit(DataGridViewDataErrorContexts.Commit)
+                If CType(sender, System.Windows.Forms.DataGridView).CurrentCell.ColumnIndex = 7 Then
+                Else
+                    dgv_BF_R.CommitEdit(DataGridViewDataErrorContexts.Commit)
+                End If
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -1948,7 +1955,10 @@ Public Class PSWizard
     Private Sub dgv_LN_R_CurrentCellDirtyStateChanged(sender As System.Object, e As System.EventArgs) Handles dgv_LN_R.CurrentCellDirtyStateChanged
         Try
             If dgv_LN_R.IsCurrentCellDirty Then
-                dgv_LN_R.CommitEdit(DataGridViewDataErrorContexts.Commit)
+                If CType(sender, System.Windows.Forms.DataGridView).CurrentCell.ColumnIndex = 7 Then
+                Else
+                    dgv_LN_R.CommitEdit(DataGridViewDataErrorContexts.Commit)
+                End If
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -1959,7 +1969,10 @@ Public Class PSWizard
     Private Sub dgv_LS_R_CurrentCellDirtyStateChanged(sender As System.Object, e As System.EventArgs) Handles dgv_LS_R.CurrentCellDirtyStateChanged
         Try
             If dgv_LS_R.IsCurrentCellDirty Then
-                dgv_LS_R.CommitEdit(DataGridViewDataErrorContexts.Commit)
+                If CType(sender, System.Windows.Forms.DataGridView).CurrentCell.ColumnIndex = 7 Then
+                Else
+                    dgv_LS_R.CommitEdit(DataGridViewDataErrorContexts.Commit)
+                End If
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -1970,7 +1983,10 @@ Public Class PSWizard
     Private Sub dgv_SK_R_CurrentCellDirtyStateChanged(sender As System.Object, e As System.EventArgs) Handles dgv_SK_R.CurrentCellDirtyStateChanged
         Try
             If dgv_SK_R.IsCurrentCellDirty Then
-                dgv_SK_R.CommitEdit(DataGridViewDataErrorContexts.Commit)
+                If CType(sender, System.Windows.Forms.DataGridView).CurrentCell.ColumnIndex = 7 Then
+                Else
+                    dgv_SK_R.CommitEdit(DataGridViewDataErrorContexts.Commit)
+                End If
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -1981,7 +1997,10 @@ Public Class PSWizard
     Private Sub dgv_DI_R_CurrentCellDirtyStateChanged(sender As System.Object, e As System.EventArgs) Handles dgv_DI_R.CurrentCellDirtyStateChanged
         Try
             If dgv_DI_R.IsCurrentCellDirty Then
-                dgv_DI_R.CommitEdit(DataGridViewDataErrorContexts.Commit)
+                If CType(sender, System.Windows.Forms.DataGridView).CurrentCell.ColumnIndex = 7 Then
+                Else
+                    dgv_DI_R.CommitEdit(DataGridViewDataErrorContexts.Commit)
+                End If
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -1992,7 +2011,10 @@ Public Class PSWizard
     Private Sub dgv_DS_R_CurrentCellDirtyStateChanged(sender As System.Object, e As System.EventArgs) Handles dgv_DS_R.CurrentCellDirtyStateChanged
         Try
             If dgv_DS_R.IsCurrentCellDirty Then
-                dgv_DS_R.CommitEdit(DataGridViewDataErrorContexts.Commit)
+                If CType(sender, System.Windows.Forms.DataGridView).CurrentCell.ColumnIndex = 7 Then
+                Else
+                    dgv_DS_R.CommitEdit(DataGridViewDataErrorContexts.Commit)
+                End If
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -2002,7 +2024,11 @@ Public Class PSWizard
 
     Private Sub dgv_BF_R_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_BF_R.CellContentClick
         Try
-            If e.ColumnIndex = 0 Then
+            If e.RowIndex > -1 And e.ColumnIndex = 0 Then
+                If e.RowIndex = dgv_BF_R.RowCount - 1 Then
+                    ' dgv_BF_R.Rows(dgv_BF_R.RowCount - 1).ReadOnly = True
+                    Exit Sub
+                End If
                 Dim myButton As DataGridViewButtonCell
                 Dim myCheckBox As DataGridViewCheckBoxCell
                 Dim blnSelected As Boolean
@@ -2023,6 +2049,8 @@ Public Class PSWizard
                     dgv_BF_R.Rows(e.RowIndex).Cells("BSelect_BF_R").Style.SelectionBackColor = Color.YellowGreen
                 End If
                 dgv_BF_R.Refresh()
+            Else
+                'dgv_BF_R.Rows(dgv_BF_R.RowCount - 1).ReadOnly = True
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -2032,7 +2060,7 @@ Public Class PSWizard
 
     Private Sub dgv_BF_C_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_BF_C.CellContentClick
         Try
-            If e.ColumnIndex = 0 Then
+            If e.RowIndex > -1 And e.ColumnIndex = 0 Then
                 If e.RowIndex = oDt_BF_C.Rows.Count - 1 Then
                     Exit Sub
                 End If
@@ -2065,7 +2093,13 @@ Public Class PSWizard
 
     Private Sub dgv_LN_R_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_LN_R.CellContentClick
         Try
-            If e.ColumnIndex = 0 Then
+
+            If e.RowIndex > -1 And e.ColumnIndex = 0 Then
+                If e.RowIndex = dgv_LN_R.RowCount - 1 Then
+                    ' dgv_LN_R.Rows(dgv_LN_R.RowCount - 1).ReadOnly = True
+                    Exit Sub
+                End If
+
                 Dim myButton As DataGridViewButtonCell
                 Dim myCheckBox As DataGridViewCheckBoxCell
                 Dim blnSelected As Boolean
@@ -2086,6 +2120,8 @@ Public Class PSWizard
                     dgv_LN_R.Rows(e.RowIndex).Cells("BSelect_LN_R").Style.SelectionBackColor = Color.YellowGreen
                 End If
                 dgv_LN_R.Refresh()
+            Else
+                ' dgv_LN_R.Rows(dgv_LN_R.RowCount - 1).ReadOnly = True
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -2095,7 +2131,7 @@ Public Class PSWizard
 
     Private Sub dgv_LN_C_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_LN_C.CellContentClick
         Try
-            If e.ColumnIndex = 0 Then
+            If e.RowIndex > -1 And e.ColumnIndex = 0 Then
                 If e.RowIndex = oDt_Lunch_C.Rows.Count - 1 Then
                     Exit Sub
                 End If
@@ -2128,7 +2164,11 @@ Public Class PSWizard
 
     Private Sub dgv_LS_R_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_LS_R.CellContentClick
         Try
-            If e.ColumnIndex = 0 Then
+            If e.RowIndex > -1 And e.ColumnIndex = 0 Then
+                If e.RowIndex = dgv_LS_R.RowCount - 1 Then
+                    'dgv_LS_R.Rows(dgv_LS_R.RowCount - 1).ReadOnly = True
+                    Exit Sub
+                End If
                 Dim myButton As DataGridViewButtonCell
                 Dim myCheckBox As DataGridViewCheckBoxCell
                 Dim blnSelected As Boolean
@@ -2149,6 +2189,8 @@ Public Class PSWizard
                     dgv_LS_R.Rows(e.RowIndex).Cells("BSelect_LS_R").Style.SelectionBackColor = Color.YellowGreen
                 End If
                 dgv_LS_R.Refresh()
+            Else
+                'dgv_LS_R.Rows(dgv_LS_R.RowCount - 1).ReadOnly = True
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -2158,7 +2200,7 @@ Public Class PSWizard
 
     Private Sub dgv_LS_C_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_LS_C.CellContentClick
         Try
-            If e.ColumnIndex = 0 Then
+            If e.RowIndex > -1 And e.ColumnIndex = 0 Then
                 If e.RowIndex = oDt_LunchS_C.Rows.Count - 1 Then
                     Exit Sub
                 End If
@@ -2191,7 +2233,11 @@ Public Class PSWizard
 
     Private Sub dgv_SK_R_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_SK_R.CellContentClick
         Try
-            If e.ColumnIndex = 0 Then
+            If e.RowIndex > -1 And e.ColumnIndex = 0 Then
+                If e.RowIndex = dgv_SK_R.RowCount - 1 Then
+                    'dgv_SK_R.Rows(dgv_SK_R.RowCount - 1).ReadOnly = True
+                    Exit Sub
+                End If
                 Dim myButton As DataGridViewButtonCell
                 Dim myCheckBox As DataGridViewCheckBoxCell
                 Dim blnSelected As Boolean
@@ -2212,6 +2258,8 @@ Public Class PSWizard
                     dgv_SK_R.Rows(e.RowIndex).Cells("BSelect_SK_R").Style.SelectionBackColor = Color.YellowGreen
                 End If
                 dgv_SK_R.Refresh()
+            Else
+                'dgv_SK_R.Rows(dgv_SK_R.RowCount - 1).ReadOnly = True
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -2221,7 +2269,7 @@ Public Class PSWizard
 
     Private Sub dgv_SK_C_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_SK_C.CellContentClick
         Try
-            If e.ColumnIndex = 0 Then
+            If e.RowIndex > -1 And e.ColumnIndex = 0 Then
                 If e.RowIndex = oDt_Snack_C.Rows.Count - 1 Then
                     Exit Sub
                 End If
@@ -2254,7 +2302,11 @@ Public Class PSWizard
 
     Private Sub dgv_DI_R_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_DI_R.CellContentClick
         Try
-            If e.ColumnIndex = 0 Then
+            If e.RowIndex > -1 And e.ColumnIndex = 0 Then
+                If e.RowIndex = dgv_DI_R.RowCount - 1 Then
+                    'dgv_DI_R.Rows(dgv_DI_R.RowCount - 1).ReadOnly = True
+                    Exit Sub
+                End If
                 Dim myButton As DataGridViewButtonCell
                 Dim myCheckBox As DataGridViewCheckBoxCell
                 Dim blnSelected As Boolean
@@ -2275,6 +2327,8 @@ Public Class PSWizard
                     dgv_DI_R.Rows(e.RowIndex).Cells("BSelect_DI_R").Style.SelectionBackColor = Color.YellowGreen
                 End If
                 dgv_DI_R.Refresh()
+            Else
+                'dgv_DI_R.Rows(dgv_DI_R.RowCount - 1).ReadOnly = True
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -2284,7 +2338,7 @@ Public Class PSWizard
 
     Private Sub dgv_DI_C_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_DI_C.CellContentClick
         Try
-            If e.ColumnIndex = 0 Then
+            If e.RowIndex > -1 And e.ColumnIndex = 0 Then
                 If e.RowIndex = oDt_Dinner_C.Rows.Count - 1 Then
                     Exit Sub
                 End If
@@ -2317,7 +2371,11 @@ Public Class PSWizard
 
     Private Sub dgv_DS_R_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_DS_R.CellContentClick
         Try
-            If e.ColumnIndex = 0 Then
+            If e.RowIndex > -1 And e.ColumnIndex = 0 Then
+                If e.RowIndex = dgv_DS_R.RowCount - 1 Then
+                    'dgv_DS_R.Rows(dgv_DS_R.RowCount - 1).ReadOnly = True
+                    Exit Sub
+                End If
                 Dim myButton As DataGridViewButtonCell
                 Dim myCheckBox As DataGridViewCheckBoxCell
                 Dim blnSelected As Boolean
@@ -2338,6 +2396,8 @@ Public Class PSWizard
                     dgv_DS_R.Rows(e.RowIndex).Cells("BSelect_DS_R").Style.SelectionBackColor = Color.YellowGreen
                 End If
                 dgv_DS_R.Refresh()
+            Else
+                'dgv_DS_R.Rows(dgv_DS_R.RowCount - 1).ReadOnly = True
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -2347,7 +2407,7 @@ Public Class PSWizard
 
     Private Sub dgv_DS_C_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_DS_C.CellContentClick
         Try
-            If e.ColumnIndex = 0 Then
+            If e.RowIndex > -1 And e.ColumnIndex = 0 Then
                 If e.RowIndex = oDt_DinnerS_C.Rows.Count - 1 Then
                     Exit Sub
                 End If
@@ -2400,6 +2460,9 @@ Public Class PSWizard
                         dgv_BF_R.Rows(e.RowIndex).Cells("BSelect_BF_R").Style.SelectionBackColor = Color.IndianRed
                     End If
                     dgv_BF_R.Refresh()
+                End If
+                If e.RowIndex = CType(sender, System.Windows.Forms.DataGridView).RowCount - 1 Then
+                    CType(sender, System.Windows.Forms.DataGridView).Rows(e.RowIndex).ReadOnly = True
                 End If
             End If
         Catch ex As Exception
@@ -2461,6 +2524,9 @@ Public Class PSWizard
                     End If
                     dgv_LN_R.Refresh()
                 End If
+                If e.RowIndex = CType(sender, System.Windows.Forms.DataGridView).RowCount - 1 Then
+                    CType(sender, System.Windows.Forms.DataGridView).Rows(e.RowIndex).ReadOnly = True
+                End If
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -2520,6 +2586,9 @@ Public Class PSWizard
                         dgv_LS_R.Rows(e.RowIndex).Cells("BSelect_LS_R").Style.SelectionBackColor = Color.IndianRed
                     End If
                     dgv_LS_R.Refresh()
+                End If
+                If e.RowIndex = CType(sender, System.Windows.Forms.DataGridView).RowCount - 1 Then
+                    CType(sender, System.Windows.Forms.DataGridView).Rows(e.RowIndex).ReadOnly = True
                 End If
             End If
         Catch ex As Exception
@@ -2581,6 +2650,9 @@ Public Class PSWizard
                     End If
                     dgv_SK_R.Refresh()
                 End If
+                If e.RowIndex = CType(sender, System.Windows.Forms.DataGridView).RowCount - 1 Then
+                    CType(sender, System.Windows.Forms.DataGridView).Rows(e.RowIndex).ReadOnly = True
+                End If
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -2641,6 +2713,9 @@ Public Class PSWizard
                     End If
                     dgv_DI_R.Refresh()
                 End If
+                If e.RowIndex = CType(sender, System.Windows.Forms.DataGridView).RowCount - 1 Then
+                    CType(sender, System.Windows.Forms.DataGridView).Rows(e.RowIndex).ReadOnly = True
+                End If
             End If
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -2700,6 +2775,9 @@ Public Class PSWizard
                         dgv_DS_R.Rows(e.RowIndex).Cells("BSelect_DS_R").Style.SelectionBackColor = Color.IndianRed
                     End If
                     dgv_DS_R.Refresh()
+                End If
+                If e.RowIndex = CType(sender, System.Windows.Forms.DataGridView).RowCount - 1 Then
+                    CType(sender, System.Windows.Forms.DataGridView).Rows(e.RowIndex).ReadOnly = True
                 End If
             End If
         Catch ex As Exception
@@ -3114,6 +3192,47 @@ Public Class PSWizard
 
 #Region "Functions"
 
+    Public Sub Trace_DIET_App_Error(ByVal ex As Exception)
+        Try
+            Dim strFile As String = "\DIET_APP_" + System.DateTime.Now.ToString("yyyyMMdd") + ".txt"
+            Dim strPath As String = Path.GetTempPath().ToString() + strFile
+            If Not File.Exists(strPath) Then
+                Dim fileStream As FileStream
+                fileStream = New FileStream(strPath, FileMode.Create, FileAccess.Write)
+                Dim sw As New StreamWriter(fileStream)
+                sw.BaseStream.Seek(0, SeekOrigin.End)
+                'sw.WriteLine(strContent)
+                Dim strMessage As String = vbCrLf & "Message ---> " & ex.Message & _
+                vbCrLf & "HelpLink ---> " & ex.HelpLink & _
+                vbCrLf & "Source ---> " & ex.Source & _
+                vbCrLf & "StackTrace ---> " & ex.StackTrace & _
+                vbCrLf & "TargetSite ---> " & ex.TargetSite.ToString()
+                sw.WriteLine("======")
+                sw.WriteLine("Log Time : " & System.DateTime.Now.ToLongTimeString() & " Message Stack : " & strMessage)
+                sw.Flush()
+                sw.Close()
+            Else
+                Dim fileStream As FileStream
+                fileStream = New FileStream(strPath, FileMode.Append, FileAccess.Write)
+                Dim sw As New StreamWriter(fileStream)
+                sw.BaseStream.Seek(0, SeekOrigin.End)
+                'sw.WriteLine(strContent)
+                Dim strMessage As String = vbCrLf & "Message ---> " & ex.Message & _
+                vbCrLf & "HelpLink ---> " & ex.HelpLink & _
+                vbCrLf & "Source ---> " & ex.Source & _
+                vbCrLf & "StackTrace ---> " & ex.StackTrace & _
+                vbCrLf & "TargetSite ---> " & ex.TargetSite.ToString()
+                sw.WriteLine("======")
+                sw.WriteLine("Log Time : " & System.DateTime.Now.ToLongTimeString() & " Message Stack : " & strMessage)
+                sw.Flush()
+                sw.Close()
+            End If
+        Catch ex1 As Exception
+            'Trace_DIET_App_Error(ex)
+            'Throw ex
+        End Try
+    End Sub
+
     Private Sub initialize()
         Try
 
@@ -3319,9 +3438,10 @@ Public Class PSWizard
             strQuery += " JOIN [@Z_OCPM] T1 On T1.U_CardCode = T0.CardCode "
             strQuery += " JOIN [@Z_CPM1] T2 On T1.DocEntry = T2.DocEntry "
             strQuery += " And T1.U_RemDays > 0 And ISNULL(T1.U_Transfer,'N') = 'N' "
-            strQuery += " LEFT OUTER JOIN [@Z_OCPR] T3 On T0.CardCode = T3.U_CardCode "
+            'strQuery += " LEFT OUTER JOIN [@Z_OCPR] T3 On T0.CardCode = T3.U_CardCode "
+            strQuery += " JOIN [@Z_OCPR] T3 On T0.CardCode = T3.U_CardCode "
             strQuery += " JOIN OITM T4 ON T4.ItemCode = T1.U_PrgCode "
-            strQuery += " LEFT OUTER JOIN OITB T5 On T4.ItmsGrpCod = T5.ItmsGrpCod "
+            strQuery += " JOIN OITB T5 On T4.ItmsGrpCod = T5.ItmsGrpCod "
             strQuery += " LEFT OUTER JOIN "
             strQuery += " RDR1 T6 ON T6.BaseCard = T1.U_CardCode  "
             strQuery += " And (T6.LineStatus = 'O' Or (T6.LineStatus = 'C' And T6.TargetType <> '-1')) "
@@ -3339,15 +3459,15 @@ Public Class PSWizard
             End If
 
             If strProgram1.Length > 0 And strProgram2.Length > 0 Then
-                strQuery += " And T1.U_PrgCode Between '" + strProgram1 + "' And '" + strProgram2 + "'"
+                strQuery += " And T1.U_PrgCode IN (Select ItemCode From OITM Where ItemCode betWeen  '" + strProgram1 + "' And '" + strProgram2 + "' )"
             End If
 
             If strCustGroup1.Length > 0 And strCustGroup2.Length > 0 Then
-                strQuery += " And T0.GroupCode Between '" + strCustGroup1 + "' And '" + strCustGroup2 + "'"
+                strQuery += " And T0.GroupCode In ( Select GroupCode From OCRG Where GroupCode betWeen  '" + strCustGroup1 + "' And '" + strCustGroup2 + "' ) "
             End If
 
             If strItemGroup1.Length > 0 And strItemGroup2.Length > 0 Then
-                strQuery += " And T4.ItmsGrpCod Between '" + strItemGroup1 + "' And '" + strItemGroup2 + "'"
+                strQuery += " And T4.ItmsGrpCod IN (Select ItmsGrpCod From OITB Where ItmsGrpCod betWeen  '" + strItemGroup1 + "' And '" + strItemGroup2 + "' ) "
             End If
 
             If strFromDate.Length > 0 And strToDate.Length > 0 Then
@@ -3403,6 +3523,7 @@ Public Class PSWizard
             Try
                 oDt_Programs.Rows.Clear()
             Catch ex As Exception
+                Trace_DIET_App_Error(ex)
 
             End Try
 
@@ -3441,7 +3562,7 @@ Public Class PSWizard
             strQuery += "  (1 = 1)  "
             strQuery += "  ) "
             strQuery += "  And T6.U_DelDate Is Null "
-            strQuery += "  Order By T1.U_PToDate,T1.DocEntry  "
+            strQuery += "  Order By T1.DocEntry  "
 
             oDr = Singleton.GetSQLDataObject().ExecuteReader(Singleton.getSAPCompany.CompanyDB, strQuery)
             oDt_Programs.Load(oDr)
@@ -3466,6 +3587,7 @@ Public Class PSWizard
             Try
                 oDt_ProgramDates.Rows.Clear()
             Catch ex As Exception
+                Trace_DIET_App_Error(ex)
 
             End Try
 
@@ -3515,7 +3637,7 @@ Public Class PSWizard
             strQuery += "  (1 = 1)  "
             strQuery += "  ) "
             strQuery += "  And T6.U_DelDate Is Null "
-            strQuery += "  Order By T0.U_PrgDate,T1.DocEntry "
+            strQuery += "  Order By T1.DocEntry,T0.U_PrgDate  "
 
             oDr = Singleton.GetSQLDataObject().ExecuteReader(Singleton.getSAPCompany.CompanyDB, strQuery)
             oDt_ProgramDates.Load(oDr)
@@ -3583,8 +3705,13 @@ Public Class PSWizard
                 oDr = Singleton.GetSQLDataObject().ExecuteReader(Singleton.getSAPCompany.CompanyDB, strQuery)
                 oDt_BF_R.Load(oDr)
                 oDr.Close()
+                Dim dr12 As DataRow = oDt_BF_R.NewRow()
+                dr12("Select") = False
+                oDt_BF_R.Rows.Add(dr12)
+                oDt_BF_R.AcceptChanges()
                 dgv_BF_R.DataSource = oDt_BF_R
                 dgv_BF_R.Refresh()
+                'dgv_BF_R.Rows(dgv_BF_R.RowCount - 1).ReadOnly = True
             Else
                 strQuery = " Select (Select Case When T0.U_ItemCode = T2.U_ItemCode Then 1 ELSE 0 END) As 'Select',"
                 strQuery += " T0.U_ItemCode,U_ItemName, "
@@ -3617,8 +3744,13 @@ Public Class PSWizard
                 oDr = Singleton.GetSQLDataObject().ExecuteReader(Singleton.getSAPCompany.CompanyDB, strQuery)
                 oDt_BF_R.Load(oDr)
                 oDr.Close()
+                Dim dr12 As DataRow = oDt_BF_R.NewRow()
+                dr12("Select") = False
+                oDt_BF_R.Rows.Add(dr12)
+                oDt_BF_R.AcceptChanges()
                 dgv_BF_R.DataSource = oDt_BF_R
                 dgv_BF_R.Refresh()
+                'dgv_BF_R.Rows(dgv_BF_R.RowCount - 1).ReadOnly = True
             End If
 
             'Fill Medical & Dislike
@@ -3700,8 +3832,13 @@ Public Class PSWizard
                 oDr = Singleton.GetSQLDataObject().ExecuteReader(Singleton.getSAPCompany.CompanyDB, strQuery)
                 oDt_Lunch_R.Load(oDr)
                 oDr.Close()
+                Dim dr12 As DataRow = oDt_Lunch_R.NewRow()
+                dr12("Select") = False
+                oDt_Lunch_R.Rows.Add(dr12)
+                oDt_Lunch_R.AcceptChanges()
                 dgv_LN_R.DataSource = oDt_Lunch_R
                 dgv_LN_R.Refresh()
+                'dgv_LN_R.Rows(dgv_LN_R.RowCount - 1).ReadOnly = True
             Else
 
                 strQuery = " Select (Select Case When T0.U_ItemCode = T2.U_ItemCode Then 1 ELSE 0 END) As 'Select', "
@@ -3737,8 +3874,13 @@ Public Class PSWizard
                 oDr = Singleton.GetSQLDataObject().ExecuteReader(Singleton.getSAPCompany.CompanyDB, strQuery)
                 oDt_Lunch_R.Load(oDr)
                 oDr.Close()
+                Dim dr12 As DataRow = oDt_Lunch_R.NewRow()
+                dr12("Select") = False
+                oDt_Lunch_R.Rows.Add(dr12)
+                oDt_Lunch_R.AcceptChanges()
                 dgv_LN_R.DataSource = oDt_Lunch_R
                 dgv_LN_R.Refresh()
+                'dgv_LN_R.Rows(dgv_LN_R.RowCount - 1).ReadOnly = True
             End If
 
             'Fill Medical & Dislike
@@ -3803,8 +3945,13 @@ Public Class PSWizard
                 oDr = Singleton.GetSQLDataObject().ExecuteReader(Singleton.getSAPCompany.CompanyDB, strQuery)
                 oDt_LunchS_R.Load(oDr)
                 oDr.Close()
+                Dim dr12 As DataRow = oDt_LunchS_R.NewRow()
+                dr12("Select") = False
+                oDt_LunchS_R.Rows.Add(dr12)
+                oDt_LunchS_R.AcceptChanges()
                 dgv_LS_R.DataSource = oDt_LunchS_R
                 dgv_LS_R.Refresh()
+                'dgv_LS_R.Rows(dgv_LS_R.RowCount - 1).ReadOnly = True
             Else
 
                 strQuery = " Select (Select Case When T0.U_ItemCode = T2.U_ItemCode Then 1 ELSE 0 END) As 'Select', "
@@ -3842,9 +3989,13 @@ Public Class PSWizard
                 oDr = Singleton.GetSQLDataObject().ExecuteReader(Singleton.getSAPCompany.CompanyDB, strQuery)
                 oDt_LunchS_R.Load(oDr)
                 oDr.Close()
+                Dim dr12 As DataRow = oDt_LunchS_R.NewRow()
+                dr12("Select") = False
+                oDt_LunchS_R.Rows.Add(dr12)
+                oDt_LunchS_R.AcceptChanges()
                 dgv_LS_R.DataSource = oDt_LunchS_R
                 dgv_LS_R.Refresh()
-
+                ' dgv_LS_R.Rows(dgv_LS_R.RowCount - 1).ReadOnly = True
             End If
 
             'Fill Medical & Dislike
@@ -3910,8 +4061,13 @@ Public Class PSWizard
                 oDr = Singleton.GetSQLDataObject().ExecuteReader(Singleton.getSAPCompany.CompanyDB, strQuery)
                 oDt_Snack_R.Load(oDr)
                 oDr.Close()
+                Dim dr12 As DataRow = oDt_Snack_R.NewRow()
+                dr12("Select") = False
+                oDt_Snack_R.Rows.Add(dr12)
+                oDt_Snack_R.AcceptChanges()
                 dgv_SK_R.DataSource = oDt_Snack_R
                 dgv_SK_R.Refresh()
+                'dgv_SK_R.Rows(dgv_SK_R.RowCount - 1).ReadOnly = True
             Else
 
                 strQuery = " Select (Select Case When T0.U_ItemCode = T2.U_ItemCode Then 1 ELSE 0 END) As 'Select', "
@@ -3945,8 +4101,13 @@ Public Class PSWizard
                 oDr = Singleton.GetSQLDataObject().ExecuteReader(Singleton.getSAPCompany.CompanyDB, strQuery)
                 oDt_Snack_R.Load(oDr)
                 oDr.Close()
+                Dim dr12 As DataRow = oDt_Snack_R.NewRow()
+                dr12("Select") = False
+                oDt_Snack_R.Rows.Add(dr12)
+                oDt_Snack_R.AcceptChanges()
                 dgv_SK_R.DataSource = oDt_Snack_R
                 dgv_SK_R.Refresh()
+                'dgv_SK_R.Rows(dgv_SK_R.RowCount - 1).ReadOnly = True
 
             End If
 
@@ -4014,8 +4175,13 @@ Public Class PSWizard
                 oDr = Singleton.GetSQLDataObject().ExecuteReader(Singleton.getSAPCompany.CompanyDB, strQuery)
                 oDt_Dinner_R.Load(oDr)
                 oDr.Close()
+                Dim dr12 As DataRow = oDt_Dinner_R.NewRow()
+                dr12("Select") = False
+                oDt_Dinner_R.Rows.Add(dr12)
+                oDt_Dinner_R.AcceptChanges()
                 dgv_DI_R.DataSource = oDt_Dinner_R
                 dgv_DI_R.Refresh()
+                'dgv_DI_R.Rows(dgv_DI_R.RowCount - 1).ReadOnly = True
             Else
                 strQuery = " Select (Select Case When T0.U_ItemCode = T2.U_ItemCode Then 1 ELSE 0 END) As 'Select', "
                 strQuery += " T0.U_ItemCode,U_ItemName, "
@@ -4048,8 +4214,13 @@ Public Class PSWizard
                 oDr = Singleton.GetSQLDataObject().ExecuteReader(Singleton.getSAPCompany.CompanyDB, strQuery)
                 oDt_Dinner_R.Load(oDr)
                 oDr.Close()
+                Dim dr12 As DataRow = oDt_Dinner_R.NewRow()
+                dr12("Select") = False
+                oDt_Dinner_R.Rows.Add(dr12)
+                oDt_Dinner_R.AcceptChanges()
                 dgv_DI_R.DataSource = oDt_Dinner_R
                 dgv_DI_R.Refresh()
+                ' dgv_DI_R.Rows(dgv_DI_R.RowCount - 1).ReadOnly = True
             End If
 
             'Fill Medical & Dislike
@@ -4116,8 +4287,13 @@ Public Class PSWizard
                 oDr = Singleton.GetSQLDataObject().ExecuteReader(Singleton.getSAPCompany.CompanyDB, strQuery)
                 oDt_DinnerS_R.Load(oDr)
                 oDr.Close()
+                Dim dr12 As DataRow = oDt_DinnerS_R.NewRow()
+                dr12("Select") = False
+                oDt_DinnerS_R.Rows.Add(dr12)
+                oDt_DinnerS_R.AcceptChanges()
                 dgv_DS_R.DataSource = oDt_DinnerS_R
                 dgv_DS_R.Refresh()
+                ' dgv_DS_R.Rows(dgv_DS_R.RowCount - 1).ReadOnly = True
             Else
 
                 strQuery = " Select (Select Case When T0.U_ItemCode = T2.U_ItemCode Then 1 ELSE 0 END) As 'Select', "
@@ -4155,8 +4331,13 @@ Public Class PSWizard
                 oDr = Singleton.GetSQLDataObject().ExecuteReader(Singleton.getSAPCompany.CompanyDB, strQuery)
                 oDt_DinnerS_R.Load(oDr)
                 oDr.Close()
+                Dim dr12 As DataRow = oDt_DinnerS_R.NewRow()
+                dr12("Select") = False
+                oDt_DinnerS_R.Rows.Add(dr12)
+                oDt_DinnerS_R.AcceptChanges()
                 dgv_DS_R.DataSource = oDt_DinnerS_R
                 dgv_DS_R.Refresh()
+                'dgv_DS_R.Rows(dgv_DS_R.RowCount - 1).ReadOnly = True
             End If
 
             'Fill Medical & Dislike
@@ -4338,6 +4519,7 @@ Public Class PSWizard
                                 Try
                                     strItem = IIf(IsDBNull(oDt_BF_C.Rows(intRow)(1)), "", oDt_BF_C.Rows(intRow)(1))
                                 Catch ex As Exception
+                                    Trace_DIET_App_Error(ex)
 
                                 End Try
                                 If strItem = "" Then
@@ -4354,12 +4536,13 @@ Public Class PSWizard
                             End If
                         End If
                     Else
-
+                        oDt_BF_C.AcceptChanges()
                         Dim intRow As Integer = oDt_BF_C.Rows.Count - 1
                         Dim strItem As String = String.Empty
                         Try
                             strItem = IIf(IsDBNull(oDt_BF_C.Rows(intRow)(1)), "", oDt_BF_C.Rows(intRow)(1))
                         Catch ex As Exception
+                            Trace_DIET_App_Error(ex)
 
                         End Try
                         If strItem = "" Then
@@ -4406,7 +4589,8 @@ Public Class PSWizard
                     '        Dim strItem As String = String.Empty
                     '        Try
                     '            strItem = IIf(IsDBNull(oDt_Lunch_C.Rows(intRow)(1)), "", oDt_Lunch_C.Rows(intRow)(1))
-                    '        Catch ex As Exception
+                    '       Catch ex As Exception 
+                    ' Trace_DIET_App_Error(ex)
 
                     '        End Try
                     '        If strItem = "" Then
@@ -4461,6 +4645,7 @@ Public Class PSWizard
                                 Try
                                     strItem = IIf(IsDBNull(oDt_Lunch_C.Rows(intRow)(1)), "", oDt_Lunch_C.Rows(intRow)(1))
                                 Catch ex As Exception
+                                    Trace_DIET_App_Error(ex)
 
                                 End Try
                                 If strItem = "" Then
@@ -4477,11 +4662,13 @@ Public Class PSWizard
                             End If
                         End If
                     Else
+                        oDt_Lunch_C.AcceptChanges()
                         Dim intRow As Integer = oDt_Lunch_C.Rows.Count - 1
                         Dim strItem As String = String.Empty
                         Try
                             strItem = IIf(IsDBNull(oDt_Lunch_C.Rows(intRow)(1)), "", oDt_Lunch_C.Rows(intRow)(1))
                         Catch ex As Exception
+                            Trace_DIET_App_Error(ex)
 
                         End Try
                         If strItem = "" Then
@@ -4525,7 +4712,8 @@ Public Class PSWizard
                     '        Dim strItem As String = String.Empty
                     '        Try
                     '            strItem = IIf(IsDBNull(oDt_LunchS_C.Rows(intRow)(1)), "", oDt_LunchS_C.Rows(intRow)(1))
-                    '        Catch ex As Exception
+                    '       Catch ex As Exception 
+                    '    Trace_DIET_App_Error(ex)
 
                     '        End Try
                     '        If strItem = "" Then
@@ -4579,6 +4767,7 @@ Public Class PSWizard
                                 Try
                                     strItem = IIf(IsDBNull(oDt_LunchS_C.Rows(intRow)(1)), "", oDt_LunchS_C.Rows(intRow)(1))
                                 Catch ex As Exception
+                                    Trace_DIET_App_Error(ex)
 
                                 End Try
                                 If strItem = "" Then
@@ -4595,11 +4784,13 @@ Public Class PSWizard
                             End If
                         End If
                     Else
+                        oDt_LunchS_C.AcceptChanges()
                         Dim intRow As Integer = oDt_LunchS_C.Rows.Count - 1
                         Dim strItem As String = String.Empty
                         Try
                             strItem = IIf(IsDBNull(oDt_LunchS_C.Rows(intRow)(1)), "", oDt_LunchS_C.Rows(intRow)(1))
                         Catch ex As Exception
+                            Trace_DIET_App_Error(ex)
 
                         End Try
                         If strItem = "" Then
@@ -4643,7 +4834,8 @@ Public Class PSWizard
                     '        Dim strItem As String = String.Empty
                     '        Try
                     '            strItem = IIf(IsDBNull(oDt_Snack_C.Rows(intRow)(1)), "", oDt_Snack_C.Rows(intRow)(1))
-                    '        Catch ex As Exception
+                    '       Catch ex As Exception 
+                    '  Trace_DIET_App_Error(ex)
 
                     '        End Try
                     '        If strItem = "" Then
@@ -4696,6 +4888,7 @@ Public Class PSWizard
                                 Try
                                     strItem = IIf(IsDBNull(oDt_Snack_C.Rows(intRow)(1)), "", oDt_Snack_C.Rows(intRow)(1))
                                 Catch ex As Exception
+                                    Trace_DIET_App_Error(ex)
 
                                 End Try
                                 If strItem = "" Then
@@ -4712,11 +4905,13 @@ Public Class PSWizard
                             End If
                         End If
                     Else
+                        oDt_Snack_C.AcceptChanges()
                         Dim intRow As Integer = oDt_Snack_C.Rows.Count - 1
                         Dim strItem As String = String.Empty
                         Try
                             strItem = IIf(IsDBNull(oDt_Snack_C.Rows(intRow)(1)), "", oDt_Snack_C.Rows(intRow)(1))
                         Catch ex As Exception
+                            Trace_DIET_App_Error(ex)
 
                         End Try
                         If strItem = "" Then
@@ -4760,7 +4955,8 @@ Public Class PSWizard
                     '        Dim strItem As String = String.Empty
                     '        Try
                     '            strItem = IIf(IsDBNull(oDt_Dinner_C.Rows(intRow)(1)), "", oDt_Dinner_C.Rows(intRow)(1))
-                    '        Catch ex As Exception
+                    '       Catch ex As Exception 
+                    ' Trace_DIET_App_Error(ex)
 
                     '        End Try
                     '        If strItem = "" Then
@@ -4813,6 +5009,7 @@ Public Class PSWizard
                                 Try
                                     strItem = IIf(IsDBNull(oDt_Dinner_C.Rows(intRow)(1)), "", oDt_Dinner_C.Rows(intRow)(1))
                                 Catch ex As Exception
+                                    Trace_DIET_App_Error(ex)
 
                                 End Try
                                 If strItem = "" Then
@@ -4829,11 +5026,13 @@ Public Class PSWizard
                             End If
                         End If
                     Else
+                        oDt_Dinner_C.AcceptChanges()
                         Dim intRow As Integer = oDt_Dinner_C.Rows.Count - 1
                         Dim strItem As String = String.Empty
                         Try
                             strItem = IIf(IsDBNull(oDt_Dinner_C.Rows(intRow)(1)), "", oDt_Dinner_C.Rows(intRow)(1))
                         Catch ex As Exception
+                            Trace_DIET_App_Error(ex)
 
                         End Try
                         If strItem = "" Then
@@ -4877,7 +5076,8 @@ Public Class PSWizard
                     '        Dim strItem As String = String.Empty
                     '        Try
                     '            strItem = IIf(IsDBNull(oDt_DinnerS_C.Rows(intRow)(1)), "", oDt_DinnerS_C.Rows(intRow)(1))
-                    '        Catch ex As Exception
+                    '       Catch ex As Exception 
+                    ' Trace_DIET_App_Error(ex)
 
                     '        End Try
                     '        If strItem = "" Then
@@ -4930,6 +5130,7 @@ Public Class PSWizard
                                 Try
                                     strItem = IIf(IsDBNull(oDt_DinnerS_C.Rows(intRow)(1)), "", oDt_DinnerS_C.Rows(intRow)(1))
                                 Catch ex As Exception
+                                    Trace_DIET_App_Error(ex)
 
                                 End Try
                                 If strItem = "" Then
@@ -4946,11 +5147,13 @@ Public Class PSWizard
                             End If
                         End If
                     Else
+                        oDt_DinnerS_C.AcceptChanges()
                         Dim intRow As Integer = oDt_DinnerS_C.Rows.Count - 1
                         Dim strItem As String = String.Empty
                         Try
                             strItem = IIf(IsDBNull(oDt_DinnerS_C.Rows(intRow)(1)), "", oDt_DinnerS_C.Rows(intRow)(1))
                         Catch ex As Exception
+                            Trace_DIET_App_Error(ex)
 
                         End Try
                         If strItem = "" Then
@@ -5139,7 +5342,8 @@ Public Class PSWizard
     '        Else
     '            Return False
     '        End If
-    '    Catch ex As Exception
+    '   Catch ex As Exception 
+    'Trace_DIET_App_Error(ex)
     '        Throw ex
     '    End Try
     'End Function
@@ -5254,7 +5458,8 @@ Public Class PSWizard
     '                End If
     '            End If
     '        End If
-    '    Catch ex As Exception
+    '   Catch ex As Exception 
+    'Trace_DIET_App_Error(ex)
     '        Throw ex
     '    End Try
     'End Sub
@@ -5638,7 +5843,6 @@ Public Class PSWizard
                                 .Item("U_Session").Value = strSession
                             End With
                             If oUserTable.Add <> 0 Then
-                                Trace_DIET_App_Error(New Exception(Singleton.getSAPCompany.GetLastErrorDescription))
                                 Throw New Exception(Singleton.getSAPCompany.GetLastErrorDescription)
                             End If
                         Else
@@ -5662,11 +5866,12 @@ Public Class PSWizard
                         .Item("U_Session").Value = strSession
                     End With
                     If oUserTable.Update <> 0 Then
-                        Trace_DIET_App_Error(New Exception(Singleton.getSAPCompany.GetLastErrorDescription))
                         Throw New Exception(Singleton.getSAPCompany.GetLastErrorDescription)
                     End If
                 End If
             Next
+
+
 
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -5689,7 +5894,7 @@ Public Class PSWizard
             Else
                 MaxCode = 1
             End If
-            sCode = Format(MaxCode, "00000000")
+            sCode = Format(MaxCode, "0000000000")
             Return sCode
         Catch ex As Exception
             Trace_DIET_App_Error(ex)
@@ -5781,7 +5986,6 @@ Public Class PSWizard
             End If
             strPSRef = oGeneralParams.GetProperty("DocEntry")
             If strPSRef <> "" Then
-                'Trace_DIET_App_Error("Presales Added : " & strPSRef)
                 Return True
             Else
                 Return False
@@ -5950,6 +6154,7 @@ Public Class PSWizard
                                         End If
                                     Catch ex As Exception
                                         Trace_DIET_App_Error(ex)
+
                                     End Try
 
                                     'MessageBox.Show("5")
@@ -5967,6 +6172,7 @@ Public Class PSWizard
                                         oOrder.Lines.UserFields.Fields.Item("U_PaidType").Value = strPayType
                                     Catch ex As Exception
                                         Trace_DIET_App_Error(ex)
+
                                     End Try
 
                                     oOrder.Lines.Add()
@@ -5979,8 +6185,6 @@ Public Class PSWizard
                                 If intStatus = 0 Then
                                     _retVal = True
                                     Dim strOrder As String = Singleton.getSAPCompany.GetNewObjectKey()
-
-                                    'Trace_DIET_App_Error("Sale Order Added : " & strOrder)
 
                                     'Header
                                     strQuery = "Update [@Z_OPSL] Set U_SalesO = ISNULL(U_SalesO,'') + '" & strOrder & ",'"
@@ -5997,7 +6201,7 @@ Public Class PSWizard
                                 Else
                                     'MessageBox.Show(intStatus.ToString)
                                     _retVal = False
-                                    'Trace_DIET_App_Error(New Exception(Singleton.getSAPCompany.GetLastErrorDescription()))
+
                                     Throw New Exception(Singleton.getSAPCompany.GetLastErrorDescription())
                                 End If
                             End If
@@ -6006,72 +6210,59 @@ Public Class PSWizard
                         End While
                     End If
 
+
                 End If
 
                 Return _retVal
             Catch ex As Exception
-                _retVal = False
-                'Throw New Exception(Singleton.getSAPCompany.GetLastErrorDescription())
                 Trace_DIET_App_Error(ex)
-                Throw New Exception(ex.StackTrace)
+                _retVal = False
+                Throw New Exception(Singleton.getSAPCompany.GetLastErrorDescription())
             End Try
             Return _retVal
         Catch ex As Exception
+            Trace_DIET_App_Error(ex)
             Throw ex
         End Try
     End Function
 
     Public Function getRecordSetValue(ByVal strQuery As String, strColumn As String) As Double
-        Try
-            Dim oTemp As SAPbobsCOM.Recordset
-            oTemp = Singleton.getSAPCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
-            oTemp.DoQuery(strQuery)
-            If Not oTemp.EoF Then
-                Return oTemp.Fields.Item(strColumn).Value
-            Else
-                Return 0
-            End If
-        Catch ex As Exception
-            Trace_DIET_App_Error(ex)
-        End Try
-        Return 0
+        Dim oTemp As SAPbobsCOM.Recordset
+        oTemp = Singleton.getSAPCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+        oTemp.DoQuery(strQuery)
+        If Not oTemp.EoF Then
+            Return oTemp.Fields.Item(strColumn).Value
+        Else
+            Return 0
+        End If
     End Function
 
     Public Function getRecordSetValueString_Item(ByVal strQuery As String, strColumn As String) As String
-        Try
-            Dim oTemp As SAPbobsCOM.Recordset
-            oTemp = Singleton.getSAPCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
-            oTemp.DoQuery(strQuery)
-            If Not oTemp.EoF Then
-                If oTemp.RecordCount = 1 Then
-                    Return oTemp.Fields.Item(strColumn).Value
-                Else
-                    Return ""
-                End If
-            Else
-                Return ""
-            End If
-        Catch ex As Exception
-            Trace_DIET_App_Error(ex)
-        End Try
-        Return ""
-    End Function
-
-    Public Function getRecordSetValueString(ByVal strQuery As String, strColumn As String) As String
-        Try
-            Dim oTemp As SAPbobsCOM.Recordset
-            oTemp = Singleton.getSAPCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
-            oTemp.DoQuery(strQuery)
-            If Not oTemp.EoF Then
+        Dim oTemp As SAPbobsCOM.Recordset
+        oTemp = Singleton.getSAPCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+        oTemp.DoQuery(strQuery)
+        If Not oTemp.EoF Then
+            If oTemp.RecordCount = 1 Then
                 Return oTemp.Fields.Item(strColumn).Value
             Else
                 Return ""
             End If
-        Catch ex As Exception
-            Trace_DIET_App_Error(ex)
-        End Try
-        Return ""
+        Else
+            Return ""
+        End If
     End Function
+
+    Public Function getRecordSetValueString(ByVal strQuery As String, strColumn As String) As String
+        Dim oTemp As SAPbobsCOM.Recordset
+        oTemp = Singleton.getSAPCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+        oTemp.DoQuery(strQuery)
+        If Not oTemp.EoF Then
+            Return oTemp.Fields.Item(strColumn).Value
+        Else
+            Return ""
+        End If
+    End Function
+
 
     Private Sub clearFoodDataTable()
         Try
@@ -6371,48 +6562,225 @@ Public Class PSWizard
         Return _retVal
     End Function
 
-    Public Sub Trace_DIET_App_Error(ByVal ex As Exception)
+#End Region
+
+    Private Sub dgv_BF_C_CellMouseUp(sender As System.Object, e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgv_BF_C.CellMouseUp
         Try
-            Dim strFile As String = "\DIET_APP_" + System.DateTime.Now.ToString("yyyyMMdd") + ".txt"
-            Dim strPath As String = System.Windows.Forms.Application.StartupPath.ToString() + strFile
-            If Not File.Exists(strPath) Then
-                Dim fileStream As FileStream
-                fileStream = New FileStream(strPath, FileMode.Create, FileAccess.Write)
-                Dim sw As New StreamWriter(fileStream)
-                sw.BaseStream.Seek(0, SeekOrigin.End)
-                'sw.WriteLine(strContent)
-                Dim strMessage As String = vbCrLf & "Message ---> " & ex.Message & _
-                vbCrLf & "HelpLink ---> " & ex.HelpLink & _
-                vbCrLf & "Source ---> " & ex.Source & _
-                vbCrLf & "StackTrace ---> " & ex.StackTrace & _
-                vbCrLf & "TargetSite ---> " & ex.TargetSite.ToString()
-                sw.WriteLine("======")
-                sw.WriteLine("Log Time : " & System.DateTime.Now.ToLongTimeString() & " Message Stack : " & strMessage)
-                sw.Flush()
-                sw.Close()
-            Else
-                Dim fileStream As FileStream
-                fileStream = New FileStream(strPath, FileMode.Append, FileAccess.Write)
-                Dim sw As New StreamWriter(fileStream)
-                sw.BaseStream.Seek(0, SeekOrigin.End)
-                'sw.WriteLine(strContent)
-                Dim strMessage As String = vbCrLf & "Message ---> " & ex.Message & _
-                vbCrLf & "HelpLink ---> " & ex.HelpLink & _
-                vbCrLf & "Source ---> " & ex.Source & _
-                vbCrLf & "StackTrace ---> " & ex.StackTrace & _
-                vbCrLf & "TargetSite ---> " & ex.TargetSite.ToString()
-                sw.WriteLine("======")
-                sw.WriteLine("Log Time : " & System.DateTime.Now.ToLongTimeString() & " Message Stack : " & strMessage)
-                sw.Flush()
-                sw.Close()
+            If e.Button = MouseButtons.Right Then
+                If e.RowIndex < 0 Then
+                    Exit Sub
+                End If
+                Me.dgv_BF_C.Rows(e.RowIndex).Selected = True
+                'Me.oRowIndex = e.RowIndex
+                Me.dgv_BF_C.CurrentCell = Me.dgv_BF_C.Rows(e.RowIndex).Cells(1)
+                Me.cmsMenu_BF.Show(Me.dgv_BF_C, e.Location)
+                cmsMenu_BF.Show(Cursor.Position)
             End If
-        Catch ex1 As Exception
+        Catch ex As Exception
             Trace_DIET_App_Error(ex)
-            'Throw ex
+            MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
         End Try
     End Sub
 
-#End Region
+    Private Sub dgv_LN_C_CellMouseUp(sender As System.Object, e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgv_LN_C.CellMouseUp
+        Try
+            If e.Button = MouseButtons.Right Then
+                If e.RowIndex < 0 Then
+                    Exit Sub
+                End If
+                Me.dgv_LN_C.Rows(e.RowIndex).Selected = True
+                'Me.oRowIndex = e.RowIndex
+                Me.dgv_LN_C.CurrentCell = Me.dgv_LN_C.Rows(e.RowIndex).Cells(1)
+                Me.cmsMenu_BF.Show(Me.dgv_LN_C, e.Location)
+                cms_Menu_LN.Show(Cursor.Position)
+            End If
+        Catch ex As Exception
+            Trace_DIET_App_Error(ex)
+            MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
+        End Try
+    End Sub
+
+    Private Sub dgv_LS_C_CellMouseUp(sender As System.Object, e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgv_LS_C.CellMouseUp
+        Try
+            If e.Button = MouseButtons.Right Then
+                If e.RowIndex < 0 Then
+                    Exit Sub
+                End If
+                Me.dgv_LS_C.Rows(e.RowIndex).Selected = True
+                'Me.oRowIndex = e.RowIndex
+                Me.dgv_LS_C.CurrentCell = Me.dgv_LS_C.Rows(e.RowIndex).Cells(1)
+                Me.cmsMenu_BF.Show(Me.dgv_LS_C, e.Location)
+                cms_Menu_LS.Show(Cursor.Position)
+            End If
+        Catch ex As Exception
+            Trace_DIET_App_Error(ex)
+            MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
+        End Try
+    End Sub
+
+
+    Private Sub dgv_DI_C_CellMouseUp(sender As System.Object, e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgv_DI_C.CellMouseUp
+        Try
+            If e.Button = MouseButtons.Right Then
+                If e.RowIndex < 0 Then
+                    Exit Sub
+                End If
+                Me.dgv_DI_C.Rows(e.RowIndex).Selected = True
+                'Me.oRowIndex = e.RowIndex
+                Me.dgv_DI_C.CurrentCell = Me.dgv_DI_C.Rows(e.RowIndex).Cells(1)
+                Me.cmsMenu_BF.Show(Me.dgv_DI_C, e.Location)
+                cms_Menu_DN.Show(Cursor.Position)
+            End If
+        Catch ex As Exception
+            Trace_DIET_App_Error(ex)
+            MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
+        End Try
+    End Sub
+
+    Private Sub dgv_DS_C_CellMouseUp(sender As System.Object, e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgv_DS_C.CellMouseUp
+        Try
+            If e.Button = MouseButtons.Right Then
+                If e.RowIndex < 0 Then
+                    Exit Sub
+                End If
+                Me.dgv_DS_C.Rows(e.RowIndex).Selected = True
+                'Me.oRowIndex = e.RowIndex
+                Me.dgv_DS_C.CurrentCell = Me.dgv_DS_C.Rows(e.RowIndex).Cells(1)
+                Me.cmsMenu_BF.Show(Me.dgv_DS_C, e.Location)
+                cms_Menu_DS.Show(Cursor.Position)
+            End If
+        Catch ex As Exception
+            Trace_DIET_App_Error(ex)
+            MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
+        End Try
+    End Sub
+
+    Private Sub dgv_SK_C_CellMouseUp(sender As System.Object, e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles dgv_SK_C.CellMouseUp
+        Try
+            If e.Button = MouseButtons.Right Then
+                If e.RowIndex < 0 Then
+                    Exit Sub
+                End If
+                Me.dgv_SK_C.Rows(e.RowIndex).Selected = True
+                'Me.oRowIndex = e.RowIndex
+                Me.dgv_SK_C.CurrentCell = Me.dgv_SK_C.Rows(e.RowIndex).Cells(1)
+                Me.cmsMenu_BF.Show(Me.dgv_SK_C, e.Location)
+                cms_Menu_SK.Show(Cursor.Position)
+            End If
+        Catch ex As Exception
+            Trace_DIET_App_Error(ex)
+            MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
+        End Try
+    End Sub
+
+    Private Sub cmsMenu_BF_Click(sender As System.Object, e As System.EventArgs) Handles cmsMenu_BF.Click
+        Try
+            Dim oRowSelectedIndex As Integer = dgv_BF_C.CurrentCell.RowIndex
+            If oRowSelectedIndex > -1 Then
+                If Not Me.dgv_BF_C.Rows(oRowSelectedIndex).IsNewRow Then
+                    If Me.dgv_BF_C.RowCount > 1 Then
+                        If oRowSelectedIndex < dgv_BF_C.RowCount - 1 Then
+                            Me.dgv_BF_C.Rows.RemoveAt(oRowSelectedIndex)
+                        End If
+                    End If
+                End If
+            End If
+        Catch ex As Exception
+            Trace_DIET_App_Error(ex)
+            MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
+        End Try
+    End Sub
+
+    Private Sub cms_Menu_LN_Click(sender As System.Object, e As System.EventArgs) Handles cms_Menu_LN.Click
+        Try
+            Dim oRowSelectedIndex As Integer = dgv_LN_C.CurrentCell.RowIndex
+            If oRowSelectedIndex > -1 Then
+                If Not Me.dgv_LN_C.Rows(oRowSelectedIndex).IsNewRow Then
+                    If Me.dgv_LN_C.RowCount > 1 Then
+                        If oRowSelectedIndex < dgv_LN_C.RowCount - 1 Then
+                            Me.dgv_LN_C.Rows.RemoveAt(oRowSelectedIndex)
+                        End If
+                    End If
+                End If
+            End If
+        Catch ex As Exception
+            Trace_DIET_App_Error(ex)
+            MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
+        End Try
+    End Sub
+
+    Private Sub cms_Menu_LS_Click(sender As System.Object, e As System.EventArgs) Handles cms_Menu_LS.Click
+        Try
+            Dim oRowSelectedIndex As Integer = dgv_LS_C.CurrentCell.RowIndex
+            If oRowSelectedIndex > -1 Then
+                If Not Me.dgv_LS_C.Rows(oRowSelectedIndex).IsNewRow Then
+                    If Me.dgv_LS_C.RowCount > 1 Then
+                        If oRowSelectedIndex < dgv_LS_C.RowCount - 1 Then
+                            Me.dgv_LS_C.Rows.RemoveAt(oRowSelectedIndex)
+                        End If
+                    End If
+                End If
+            End If
+        Catch ex As Exception
+            Trace_DIET_App_Error(ex)
+            MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
+        End Try
+    End Sub
+
+    Private Sub cms_Menu_SK_Click(sender As System.Object, e As System.EventArgs) Handles cms_Menu_SK.Click
+        Try
+            Dim oRowSelectedIndex As Integer = dgv_SK_C.CurrentCell.RowIndex
+            If oRowSelectedIndex > -1 Then
+                If Not Me.dgv_SK_C.Rows(oRowSelectedIndex).IsNewRow Then
+                    If Me.dgv_SK_C.RowCount > 1 Then
+                        If oRowSelectedIndex < dgv_SK_C.RowCount - 1 Then
+                            Me.dgv_SK_C.Rows.RemoveAt(oRowSelectedIndex)
+                        End If
+                    End If
+                End If
+            End If
+        Catch ex As Exception
+            Trace_DIET_App_Error(ex)
+            MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
+        End Try
+    End Sub
+
+    Private Sub cms_Menu_DN_Click(sender As System.Object, e As System.EventArgs) Handles cms_Menu_DN.Click
+        Try
+            Dim oRowSelectedIndex As Integer = dgv_DI_C.CurrentCell.RowIndex
+            If oRowSelectedIndex > -1 Then
+                If Not Me.dgv_DI_C.Rows(oRowSelectedIndex).IsNewRow Then
+                    If Me.dgv_DI_C.RowCount > 1 Then
+                        If oRowSelectedIndex < dgv_DI_C.RowCount - 1 Then
+                            Me.dgv_DI_C.Rows.RemoveAt(oRowSelectedIndex)
+                        End If
+                    End If
+                End If
+            End If
+        Catch ex As Exception
+            Trace_DIET_App_Error(ex)
+            MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
+        End Try
+    End Sub
+
+    Private Sub cms_Menu_DS_Click(sender As System.Object, e As System.EventArgs) Handles cms_Menu_DS.Click
+        Try
+            Dim oRowSelectedIndex As Integer = dgv_DS_C.CurrentCell.RowIndex
+            If oRowSelectedIndex > -1 Then
+                If Not Me.dgv_DS_C.Rows(oRowSelectedIndex).IsNewRow Then
+                    If Me.dgv_DS_C.RowCount > 1 Then
+                        If oRowSelectedIndex < dgv_DS_C.RowCount - 1 Then
+                            Me.dgv_DS_C.Rows.RemoveAt(oRowSelectedIndex)
+                        End If
+                    End If
+                End If
+            End If
+        Catch ex As Exception
+            Trace_DIET_App_Error(ex)
+            MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
+        End Try
+    End Sub
+
 
 End Class
 
@@ -6484,7 +6852,8 @@ End Class
 '        Else
 '            blnflag_BF_C = True
 '        End If
-'    Catch ex As Exception
+'   Catch ex As Exception 
+'Trace_DIET_App_Error(ex)
 '        MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
 '    End Try
 'End Sub
@@ -6517,7 +6886,8 @@ End Class
 '        '    End If
 '        'End If
 
-'    Catch ex As Exception
+'   Catch ex As Exception 
+'(ex)
 '        MainForm.ErrorMsg.StatusBarMsg(ex.Message, Bx_UI_COM_ErrorMsg.ErrorComponent.MessageType.bx_Error)
 '    End Try
 'End Sub

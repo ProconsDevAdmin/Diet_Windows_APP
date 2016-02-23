@@ -22,6 +22,7 @@ Partial Class PSWizard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -30,79 +31,79 @@ Partial Class PSWizard
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle37 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle38 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle43 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle44 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle49 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle50 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle55 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle56 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle61 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle62 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle67 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle68 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle73 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle74 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle79 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle80 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle81 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle37 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle34 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle35 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle36 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle38 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle43 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle39 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle40 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle41 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle42 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle44 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle49 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle45 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle46 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle47 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle48 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle50 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle55 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle51 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle52 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle53 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle54 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle56 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle61 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle57 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle58 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle59 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle60 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle62 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle67 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle63 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle64 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle65 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle66 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle68 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle73 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle69 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle70 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle71 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle72 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle74 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle79 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle75 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle76 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle77 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle78 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle80 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle81 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.scFoodWizard = New System.Windows.Forms.SplitContainer()
         Me.scPrograms = New System.Windows.Forms.SplitContainer()
         Me.chkLoad = New System.Windows.Forms.CheckBox()
@@ -140,27 +141,125 @@ Partial Class PSWizard
         Me.tpBreak = New System.Windows.Forms.TabPage()
         Me.scBF = New System.Windows.Forms.SplitContainer()
         Me.dgv_BF_R = New System.Windows.Forms.DataGridView()
+        Me.Select_BF_R = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.BSelect_BF_R = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.ItemCode_BF_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemName_BF_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity_BF_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dislike_BF_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Medical_BF_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Remarks_BF_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgv_BF_C = New System.Windows.Forms.DataGridView()
+        Me.Select_BF_C = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.BSelect_BF_C = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.ItemCode_BF_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemName_BF_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity_BF_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dislike_BF_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Medical_BF_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Remarks_BF_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cmsMenu_BF = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.tpLunch = New System.Windows.Forms.TabPage()
         Me.scLunch = New System.Windows.Forms.SplitContainer()
         Me.dgv_LN_R = New System.Windows.Forms.DataGridView()
+        Me.Select_LN_R = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.BSelect_LN_R = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.ItemCode_LN_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemName_LN_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity_LN_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dislike_LN_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Medical_LN_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Remarks_LN_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgv_LN_C = New System.Windows.Forms.DataGridView()
+        Me.Select_LN_C = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.BSelect_LN_C = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.ItemCode_LN_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemName_LN_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity_LN_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dislike_LN_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Medical_LN_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Remarks_LN_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tpLunchSide = New System.Windows.Forms.TabPage()
         Me.scLunchSide = New System.Windows.Forms.SplitContainer()
         Me.dgv_LS_R = New System.Windows.Forms.DataGridView()
+        Me.Select_LS_R = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.BSelect_LS_R = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.ItemCode_LS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemName_LS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity_LS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dislike_LS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Medical_LS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Remarks_LS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgv_LS_C = New System.Windows.Forms.DataGridView()
+        Me.Select_LS_C = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.BSelect_LS_C = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.ItemCode_LS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemName_LS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity_LS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dislike_LS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Medical_LS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Remarks_LS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tpSnack = New System.Windows.Forms.TabPage()
         Me.scSnack = New System.Windows.Forms.SplitContainer()
         Me.dgv_SK_R = New System.Windows.Forms.DataGridView()
+        Me.Select_SK_R = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.BSelect_SK_R = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.ItemCode_SK_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemName_SK_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity_SK_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dislike_SK_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Medical_SK_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Remarks_SK_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgv_SK_C = New System.Windows.Forms.DataGridView()
+        Me.Select_SK_C = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.BSelect_SK_C = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.ItemCode_SK_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemName_SK_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity_SK_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dislike_SK_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Medical_SK_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Remarks_SK_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tpDinner = New System.Windows.Forms.TabPage()
         Me.scDinner = New System.Windows.Forms.SplitContainer()
         Me.dgv_DI_R = New System.Windows.Forms.DataGridView()
+        Me.Select_DI_R = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.BSelect_DI_R = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.ItemCode_DI_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemName_DI_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity_DI_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dislike_DI_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Medical_DI_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Remarks_DI_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgv_DI_C = New System.Windows.Forms.DataGridView()
+        Me.Select_DI_C = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.BSelect_DI_C = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.ItemCode_DI_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemName_DI_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity_DI_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dislike_DI_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Medical_DI_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Remarks_DI_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tpDinnerSide = New System.Windows.Forms.TabPage()
         Me.scDinnerSide = New System.Windows.Forms.SplitContainer()
         Me.dgv_DS_R = New System.Windows.Forms.DataGridView()
+        Me.Select_DS_R = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.BSelect_DS_R = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.ItemCode_DS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemName_DS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity_DS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dislike_DS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Medical_DS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Remarks_DS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgv_DS_C = New System.Windows.Forms.DataGridView()
+        Me.Select_DS_C = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.BSelect_DS_C = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.ItemCode_DS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemName_DS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity_DS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Dislike_DS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Medical_DS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Remarks_DS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tlpFooter = New System.Windows.Forms.TableLayoutPanel()
         Me.btn_Back_FS = New System.Windows.Forms.Button()
         Me.btn_Cancel_FS = New System.Windows.Forms.Button()
@@ -198,102 +297,16 @@ Partial Class PSWizard
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.btnNext_MC = New System.Windows.Forms.Button()
         Me.btnBack_MC = New System.Windows.Forms.Button()
-        Me.Select_BF_R = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.BSelect_BF_R = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.ItemCode_BF_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemName_BF_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantity_BF_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dislike_BF_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Medical_BF_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Remarks_BF_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Select_BF_C = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.BSelect_BF_C = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.ItemCode_BF_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemName_BF_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantity_BF_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dislike_BF_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Medical_BF_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Remarks_BF_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Select_LN_R = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.BSelect_LN_R = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.ItemCode_LN_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemName_LN_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantity_LN_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dislike_LN_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Medical_LN_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Remarks_LN_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Select_LN_C = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.BSelect_LN_C = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.ItemCode_LN_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemName_LN_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantity_LN_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dislike_LN_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Medical_LN_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Remarks_LN_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Select_LS_R = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.BSelect_LS_R = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.ItemCode_LS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemName_LS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantity_LS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dislike_LS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Medical_LS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Remarks_LS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Select_LS_C = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.BSelect_LS_C = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.ItemCode_LS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemName_LS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantity_LS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dislike_LS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Medical_LS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Remarks_LS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Select_SK_R = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.BSelect_SK_R = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.ItemCode_SK_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemName_SK_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantity_SK_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dislike_SK_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Medical_SK_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Remarks_SK_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Select_SK_C = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.BSelect_SK_C = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.ItemCode_SK_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemName_SK_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantity_SK_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dislike_SK_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Medical_SK_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Remarks_SK_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Select_DI_R = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.BSelect_DI_R = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.ItemCode_DI_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemName_DI_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantity_DI_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dislike_DI_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Medical_DI_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Remarks_DI_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Select_DI_C = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.BSelect_DI_C = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.ItemCode_DI_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemName_DI_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantity_DI_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dislike_DI_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Medical_DI_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Remarks_DI_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Select_DS_R = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.BSelect_DS_R = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.ItemCode_DS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemName_DS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantity_DS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dislike_DS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Medical_DS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Remarks_DS_R = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Select_DS_C = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.BSelect_DS_C = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.ItemCode_DS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemName_DS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantity_DS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Dislike_DS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Medical_DS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Remarks_DS_C = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cms_Menu_LN = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.cms_Menu_LS = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.cms_Menu_SK = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.cms_Menu_DN = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.cms_Menu_DS = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.scFoodWizard, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.scFoodWizard.Panel1.SuspendLayout()
         Me.scFoodWizard.Panel2.SuspendLayout()
@@ -320,6 +333,7 @@ Partial Class PSWizard
         Me.scBF.SuspendLayout()
         CType(Me.dgv_BF_R, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgv_BF_C, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.cmsMenu_BF.SuspendLayout()
         Me.tpLunch.SuspendLayout()
         CType(Me.scLunch, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.scLunch.Panel1.SuspendLayout()
@@ -366,6 +380,11 @@ Partial Class PSWizard
         Me.sc_Missed_Clients_0.SuspendLayout()
         CType(Me.dgv_MissedClients, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
+        Me.cms_Menu_LN.SuspendLayout()
+        Me.cms_Menu_LS.SuspendLayout()
+        Me.cms_Menu_SK.SuspendLayout()
+        Me.cms_Menu_DN.SuspendLayout()
+        Me.cms_Menu_DS.SuspendLayout()
         Me.SuspendLayout()
         '
         'scFoodWizard
@@ -877,9 +896,93 @@ Partial Class PSWizard
         Me.dgv_BF_R.MultiSelect = False
         Me.dgv_BF_R.Name = "dgv_BF_R"
         Me.dgv_BF_R.RowHeadersVisible = False
-        Me.dgv_BF_R.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_BF_R.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgv_BF_R.Size = New System.Drawing.Size(688, 85)
         Me.dgv_BF_R.TabIndex = 1
+        '
+        'Select_BF_R
+        '
+        Me.Select_BF_R.DataPropertyName = "Select"
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle8.Format = "N2"
+        DataGridViewCellStyle8.NullValue = "0"
+        Me.Select_BF_R.DefaultCellStyle = DataGridViewCellStyle8
+        Me.Select_BF_R.FillWeight = 36.077!
+        Me.Select_BF_R.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Select_BF_R.HeaderText = "Select"
+        Me.Select_BF_R.Name = "Select_BF_R"
+        Me.Select_BF_R.ReadOnly = True
+        '
+        'BSelect_BF_R
+        '
+        Me.BSelect_BF_R.FillWeight = 45.09625!
+        Me.BSelect_BF_R.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BSelect_BF_R.HeaderText = "Select"
+        Me.BSelect_BF_R.Name = "BSelect_BF_R"
+        Me.BSelect_BF_R.Text = "Select"
+        '
+        'ItemCode_BF_R
+        '
+        Me.ItemCode_BF_R.DataPropertyName = "U_ItemCode"
+        Me.ItemCode_BF_R.HeaderText = "Item Code"
+        Me.ItemCode_BF_R.Name = "ItemCode_BF_R"
+        Me.ItemCode_BF_R.ReadOnly = True
+        Me.ItemCode_BF_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ItemCode_BF_R.Visible = False
+        '
+        'ItemName_BF_R
+        '
+        Me.ItemName_BF_R.DataPropertyName = "U_ItemName"
+        Me.ItemName_BF_R.FillWeight = 102.5539!
+        Me.ItemName_BF_R.HeaderText = "Item Name"
+        Me.ItemName_BF_R.Name = "ItemName_BF_R"
+        Me.ItemName_BF_R.ReadOnly = True
+        Me.ItemName_BF_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Quantity_BF_R
+        '
+        Me.Quantity_BF_R.DataPropertyName = "Qty"
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle9.Format = "N2"
+        DataGridViewCellStyle9.NullValue = "0"
+        Me.Quantity_BF_R.DefaultCellStyle = DataGridViewCellStyle9
+        Me.Quantity_BF_R.FillWeight = 102.5539!
+        Me.Quantity_BF_R.HeaderText = "Quantity"
+        Me.Quantity_BF_R.Name = "Quantity_BF_R"
+        Me.Quantity_BF_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Dislike_BF_R
+        '
+        Me.Dislike_BF_R.DataPropertyName = "U_Dislike"
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Red
+        Me.Dislike_BF_R.DefaultCellStyle = DataGridViewCellStyle10
+        Me.Dislike_BF_R.FillWeight = 102.5539!
+        Me.Dislike_BF_R.HeaderText = "Dislike"
+        Me.Dislike_BF_R.Name = "Dislike_BF_R"
+        Me.Dislike_BF_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Medical_BF_R
+        '
+        Me.Medical_BF_R.DataPropertyName = "U_Medical"
+        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Red
+        Me.Medical_BF_R.DefaultCellStyle = DataGridViewCellStyle11
+        Me.Medical_BF_R.FillWeight = 102.5539!
+        Me.Medical_BF_R.HeaderText = "Medical"
+        Me.Medical_BF_R.Name = "Medical_BF_R"
+        Me.Medical_BF_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Remarks_BF_R
+        '
+        Me.Remarks_BF_R.DataPropertyName = "Remarks"
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.NullValue = Nothing
+        Me.Remarks_BF_R.DefaultCellStyle = DataGridViewCellStyle12
+        Me.Remarks_BF_R.FillWeight = 167.1391!
+        Me.Remarks_BF_R.HeaderText = "Remarks"
+        Me.Remarks_BF_R.Name = "Remarks_BF_R"
+        Me.Remarks_BF_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'dgv_BF_C
         '
@@ -900,6 +1003,7 @@ Partial Class PSWizard
         Me.dgv_BF_C.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.dgv_BF_C.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_BF_C.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Select_BF_C, Me.BSelect_BF_C, Me.ItemCode_BF_C, Me.ItemName_BF_C, Me.Quantity_BF_C, Me.Dislike_BF_C, Me.Medical_BF_C, Me.Remarks_BF_C})
+        Me.dgv_BF_C.ContextMenuStrip = Me.cmsMenu_BF
         DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle19.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -916,9 +1020,100 @@ Partial Class PSWizard
         Me.dgv_BF_C.Name = "dgv_BF_C"
         Me.dgv_BF_C.RowHeadersVisible = False
         Me.dgv_BF_C.RowTemplate.Height = 21
-        Me.dgv_BF_C.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_BF_C.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgv_BF_C.Size = New System.Drawing.Size(688, 105)
         Me.dgv_BF_C.TabIndex = 2
+        '
+        'Select_BF_C
+        '
+        Me.Select_BF_C.DataPropertyName = "Select"
+        Me.Select_BF_C.FillWeight = 35.93909!
+        Me.Select_BF_C.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Select_BF_C.HeaderText = "Select"
+        Me.Select_BF_C.Name = "Select_BF_C"
+        Me.Select_BF_C.ReadOnly = True
+        '
+        'BSelect_BF_C
+        '
+        Me.BSelect_BF_C.FillWeight = 44.92386!
+        Me.BSelect_BF_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BSelect_BF_C.HeaderText = "Select"
+        Me.BSelect_BF_C.Name = "BSelect_BF_C"
+        '
+        'ItemCode_BF_C
+        '
+        Me.ItemCode_BF_C.DataPropertyName = "U_ItemCode"
+        Me.ItemCode_BF_C.HeaderText = "Item Code"
+        Me.ItemCode_BF_C.Name = "ItemCode_BF_C"
+        Me.ItemCode_BF_C.ReadOnly = True
+        Me.ItemCode_BF_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ItemCode_BF_C.Visible = False
+        '
+        'ItemName_BF_C
+        '
+        Me.ItemName_BF_C.DataPropertyName = "U_ItemName"
+        Me.ItemName_BF_C.FillWeight = 89.84772!
+        Me.ItemName_BF_C.HeaderText = "Item Name"
+        Me.ItemName_BF_C.Name = "ItemName_BF_C"
+        Me.ItemName_BF_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Quantity_BF_C
+        '
+        Me.Quantity_BF_C.DataPropertyName = "Qty"
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle15.Format = "N2"
+        DataGridViewCellStyle15.NullValue = "0"
+        Me.Quantity_BF_C.DefaultCellStyle = DataGridViewCellStyle15
+        Me.Quantity_BF_C.FillWeight = 89.84772!
+        Me.Quantity_BF_C.HeaderText = "Quantity"
+        Me.Quantity_BF_C.Name = "Quantity_BF_C"
+        Me.Quantity_BF_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Dislike_BF_C
+        '
+        Me.Dislike_BF_C.DataPropertyName = "U_Dislike"
+        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Red
+        Me.Dislike_BF_C.DefaultCellStyle = DataGridViewCellStyle16
+        Me.Dislike_BF_C.FillWeight = 89.84772!
+        Me.Dislike_BF_C.HeaderText = "Dislike"
+        Me.Dislike_BF_C.Name = "Dislike_BF_C"
+        Me.Dislike_BF_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Medical_BF_C
+        '
+        Me.Medical_BF_C.DataPropertyName = "U_Medical"
+        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Red
+        Me.Medical_BF_C.DefaultCellStyle = DataGridViewCellStyle17
+        Me.Medical_BF_C.FillWeight = 89.84772!
+        Me.Medical_BF_C.HeaderText = "Medical"
+        Me.Medical_BF_C.Name = "Medical_BF_C"
+        Me.Medical_BF_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Remarks_BF_C
+        '
+        Me.Remarks_BF_C.DataPropertyName = "Remarks"
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomLeft
+        DataGridViewCellStyle18.NullValue = Nothing
+        Me.Remarks_BF_C.DefaultCellStyle = DataGridViewCellStyle18
+        Me.Remarks_BF_C.FillWeight = 149.7462!
+        Me.Remarks_BF_C.HeaderText = "Remarks"
+        Me.Remarks_BF_C.Name = "Remarks_BF_C"
+        Me.Remarks_BF_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'cmsMenu_BF
+        '
+        Me.cmsMenu_BF.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
+        Me.cmsMenu_BF.Name = "cmsMenu_BF"
+        Me.cmsMenu_BF.Size = New System.Drawing.Size(134, 26)
+        Me.cmsMenu_BF.Text = "Delete Row"
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(133, 22)
+        Me.ToolStripMenuItem1.Text = "Delete Row"
         '
         'tpLunch
         '
@@ -984,9 +1179,87 @@ Partial Class PSWizard
         Me.dgv_LN_R.MultiSelect = False
         Me.dgv_LN_R.Name = "dgv_LN_R"
         Me.dgv_LN_R.RowHeadersVisible = False
-        Me.dgv_LN_R.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_LN_R.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgv_LN_R.Size = New System.Drawing.Size(688, 87)
         Me.dgv_LN_R.TabIndex = 1
+        '
+        'Select_LN_R
+        '
+        Me.Select_LN_R.DataPropertyName = "Select"
+        Me.Select_LN_R.FillWeight = 35.93909!
+        Me.Select_LN_R.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Select_LN_R.HeaderText = "Select"
+        Me.Select_LN_R.Name = "Select_LN_R"
+        '
+        'BSelect_LN_R
+        '
+        Me.BSelect_LN_R.FillWeight = 44.92386!
+        Me.BSelect_LN_R.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BSelect_LN_R.HeaderText = "Select"
+        Me.BSelect_LN_R.Name = "BSelect_LN_R"
+        '
+        'ItemCode_LN_R
+        '
+        Me.ItemCode_LN_R.DataPropertyName = "U_ItemCode"
+        Me.ItemCode_LN_R.HeaderText = "Item Code"
+        Me.ItemCode_LN_R.Name = "ItemCode_LN_R"
+        Me.ItemCode_LN_R.ReadOnly = True
+        Me.ItemCode_LN_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ItemCode_LN_R.Visible = False
+        '
+        'ItemName_LN_R
+        '
+        Me.ItemName_LN_R.DataPropertyName = "U_ItemName"
+        Me.ItemName_LN_R.FillWeight = 89.84772!
+        Me.ItemName_LN_R.HeaderText = "Item Name"
+        Me.ItemName_LN_R.Name = "ItemName_LN_R"
+        Me.ItemName_LN_R.ReadOnly = True
+        Me.ItemName_LN_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Quantity_LN_R
+        '
+        Me.Quantity_LN_R.DataPropertyName = "Qty"
+        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle21.Format = "N2"
+        DataGridViewCellStyle21.NullValue = "0"
+        Me.Quantity_LN_R.DefaultCellStyle = DataGridViewCellStyle21
+        Me.Quantity_LN_R.FillWeight = 89.84772!
+        Me.Quantity_LN_R.HeaderText = "Quantity"
+        Me.Quantity_LN_R.Name = "Quantity_LN_R"
+        Me.Quantity_LN_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Dislike_LN_R
+        '
+        Me.Dislike_LN_R.DataPropertyName = "U_Dislike"
+        DataGridViewCellStyle22.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Red
+        Me.Dislike_LN_R.DefaultCellStyle = DataGridViewCellStyle22
+        Me.Dislike_LN_R.FillWeight = 89.84772!
+        Me.Dislike_LN_R.HeaderText = "Dislike"
+        Me.Dislike_LN_R.Name = "Dislike_LN_R"
+        Me.Dislike_LN_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Medical_LN_R
+        '
+        Me.Medical_LN_R.DataPropertyName = "U_Medical"
+        DataGridViewCellStyle23.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Red
+        Me.Medical_LN_R.DefaultCellStyle = DataGridViewCellStyle23
+        Me.Medical_LN_R.FillWeight = 89.84772!
+        Me.Medical_LN_R.HeaderText = "Medical"
+        Me.Medical_LN_R.Name = "Medical_LN_R"
+        Me.Medical_LN_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Remarks_LN_R
+        '
+        Me.Remarks_LN_R.DataPropertyName = "Remarks"
+        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle24.NullValue = Nothing
+        Me.Remarks_LN_R.DefaultCellStyle = DataGridViewCellStyle24
+        Me.Remarks_LN_R.FillWeight = 149.7462!
+        Me.Remarks_LN_R.HeaderText = "Remarks"
+        Me.Remarks_LN_R.Name = "Remarks_LN_R"
+        Me.Remarks_LN_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'dgv_LN_C
         '
@@ -1022,9 +1295,86 @@ Partial Class PSWizard
         Me.dgv_LN_C.MultiSelect = False
         Me.dgv_LN_C.Name = "dgv_LN_C"
         Me.dgv_LN_C.RowHeadersVisible = False
-        Me.dgv_LN_C.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_LN_C.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgv_LN_C.Size = New System.Drawing.Size(688, 103)
         Me.dgv_LN_C.TabIndex = 2
+        '
+        'Select_LN_C
+        '
+        Me.Select_LN_C.DataPropertyName = "Select"
+        Me.Select_LN_C.FillWeight = 35.93909!
+        Me.Select_LN_C.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Select_LN_C.HeaderText = "Select"
+        Me.Select_LN_C.Name = "Select_LN_C"
+        Me.Select_LN_C.ReadOnly = True
+        '
+        'BSelect_LN_C
+        '
+        Me.BSelect_LN_C.FillWeight = 44.92386!
+        Me.BSelect_LN_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BSelect_LN_C.HeaderText = "Select"
+        Me.BSelect_LN_C.Name = "BSelect_LN_C"
+        '
+        'ItemCode_LN_C
+        '
+        Me.ItemCode_LN_C.DataPropertyName = "U_ItemCode"
+        Me.ItemCode_LN_C.HeaderText = "Item Code"
+        Me.ItemCode_LN_C.Name = "ItemCode_LN_C"
+        Me.ItemCode_LN_C.ReadOnly = True
+        Me.ItemCode_LN_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ItemCode_LN_C.Visible = False
+        '
+        'ItemName_LN_C
+        '
+        Me.ItemName_LN_C.DataPropertyName = "U_ItemName"
+        Me.ItemName_LN_C.FillWeight = 89.84772!
+        Me.ItemName_LN_C.HeaderText = "Item Name"
+        Me.ItemName_LN_C.Name = "ItemName_LN_C"
+        Me.ItemName_LN_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Quantity_LN_C
+        '
+        Me.Quantity_LN_C.DataPropertyName = "Qty"
+        DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle27.Format = "N2"
+        Me.Quantity_LN_C.DefaultCellStyle = DataGridViewCellStyle27
+        Me.Quantity_LN_C.FillWeight = 89.84772!
+        Me.Quantity_LN_C.HeaderText = "Quantity"
+        Me.Quantity_LN_C.Name = "Quantity_LN_C"
+        Me.Quantity_LN_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Dislike_LN_C
+        '
+        Me.Dislike_LN_C.DataPropertyName = "U_Dislike"
+        DataGridViewCellStyle28.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.Red
+        Me.Dislike_LN_C.DefaultCellStyle = DataGridViewCellStyle28
+        Me.Dislike_LN_C.FillWeight = 89.84772!
+        Me.Dislike_LN_C.HeaderText = "Dislike"
+        Me.Dislike_LN_C.Name = "Dislike_LN_C"
+        Me.Dislike_LN_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Medical_LN_C
+        '
+        Me.Medical_LN_C.DataPropertyName = "U_Medical"
+        DataGridViewCellStyle29.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.Red
+        Me.Medical_LN_C.DefaultCellStyle = DataGridViewCellStyle29
+        Me.Medical_LN_C.FillWeight = 89.84772!
+        Me.Medical_LN_C.HeaderText = "Medical"
+        Me.Medical_LN_C.Name = "Medical_LN_C"
+        Me.Medical_LN_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Remarks_LN_C
+        '
+        Me.Remarks_LN_C.DataPropertyName = "Remarks"
+        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle30.NullValue = Nothing
+        Me.Remarks_LN_C.DefaultCellStyle = DataGridViewCellStyle30
+        Me.Remarks_LN_C.FillWeight = 149.7462!
+        Me.Remarks_LN_C.HeaderText = "Remarks"
+        Me.Remarks_LN_C.Name = "Remarks_LN_C"
+        Me.Remarks_LN_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'tpLunchSide
         '
@@ -1089,9 +1439,88 @@ Partial Class PSWizard
         Me.dgv_LS_R.MultiSelect = False
         Me.dgv_LS_R.Name = "dgv_LS_R"
         Me.dgv_LS_R.RowHeadersVisible = False
-        Me.dgv_LS_R.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_LS_R.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgv_LS_R.Size = New System.Drawing.Size(694, 87)
         Me.dgv_LS_R.TabIndex = 1
+        '
+        'Select_LS_R
+        '
+        Me.Select_LS_R.DataPropertyName = "Select"
+        Me.Select_LS_R.FillWeight = 35.93909!
+        Me.Select_LS_R.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Select_LS_R.HeaderText = "Select"
+        Me.Select_LS_R.Name = "Select_LS_R"
+        Me.Select_LS_R.ReadOnly = True
+        '
+        'BSelect_LS_R
+        '
+        Me.BSelect_LS_R.FillWeight = 44.92386!
+        Me.BSelect_LS_R.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BSelect_LS_R.HeaderText = "Select"
+        Me.BSelect_LS_R.Name = "BSelect_LS_R"
+        '
+        'ItemCode_LS_R
+        '
+        Me.ItemCode_LS_R.DataPropertyName = "U_ItemCode"
+        Me.ItemCode_LS_R.HeaderText = "Item Code"
+        Me.ItemCode_LS_R.Name = "ItemCode_LS_R"
+        Me.ItemCode_LS_R.ReadOnly = True
+        Me.ItemCode_LS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ItemCode_LS_R.Visible = False
+        '
+        'ItemName_LS_R
+        '
+        Me.ItemName_LS_R.DataPropertyName = "U_ItemName"
+        Me.ItemName_LS_R.FillWeight = 89.84772!
+        Me.ItemName_LS_R.HeaderText = "Item Name"
+        Me.ItemName_LS_R.Name = "ItemName_LS_R"
+        Me.ItemName_LS_R.ReadOnly = True
+        Me.ItemName_LS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Quantity_LS_R
+        '
+        Me.Quantity_LS_R.DataPropertyName = "Qty"
+        DataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle33.Format = "N2"
+        DataGridViewCellStyle33.NullValue = "0"
+        Me.Quantity_LS_R.DefaultCellStyle = DataGridViewCellStyle33
+        Me.Quantity_LS_R.FillWeight = 89.84772!
+        Me.Quantity_LS_R.HeaderText = "Quantity"
+        Me.Quantity_LS_R.Name = "Quantity_LS_R"
+        Me.Quantity_LS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Dislike_LS_R
+        '
+        Me.Dislike_LS_R.DataPropertyName = "U_Dislike"
+        DataGridViewCellStyle34.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.Red
+        Me.Dislike_LS_R.DefaultCellStyle = DataGridViewCellStyle34
+        Me.Dislike_LS_R.FillWeight = 89.84772!
+        Me.Dislike_LS_R.HeaderText = "Dislike"
+        Me.Dislike_LS_R.Name = "Dislike_LS_R"
+        Me.Dislike_LS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Medical_LS_R
+        '
+        Me.Medical_LS_R.DataPropertyName = "U_Medical"
+        DataGridViewCellStyle35.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.Red
+        Me.Medical_LS_R.DefaultCellStyle = DataGridViewCellStyle35
+        Me.Medical_LS_R.FillWeight = 89.84772!
+        Me.Medical_LS_R.HeaderText = "Medical"
+        Me.Medical_LS_R.Name = "Medical_LS_R"
+        Me.Medical_LS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Remarks_LS_R
+        '
+        Me.Remarks_LS_R.DataPropertyName = "Remarks"
+        DataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle36.NullValue = Nothing
+        Me.Remarks_LS_R.DefaultCellStyle = DataGridViewCellStyle36
+        Me.Remarks_LS_R.FillWeight = 149.7462!
+        Me.Remarks_LS_R.HeaderText = "Remarks"
+        Me.Remarks_LS_R.Name = "Remarks_LS_R"
+        Me.Remarks_LS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'dgv_LS_C
         '
@@ -1127,9 +1556,86 @@ Partial Class PSWizard
         Me.dgv_LS_C.MultiSelect = False
         Me.dgv_LS_C.Name = "dgv_LS_C"
         Me.dgv_LS_C.RowHeadersVisible = False
-        Me.dgv_LS_C.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_LS_C.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgv_LS_C.Size = New System.Drawing.Size(694, 109)
         Me.dgv_LS_C.TabIndex = 2
+        '
+        'Select_LS_C
+        '
+        Me.Select_LS_C.DataPropertyName = "Select"
+        Me.Select_LS_C.FillWeight = 35.93909!
+        Me.Select_LS_C.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Select_LS_C.HeaderText = "Select"
+        Me.Select_LS_C.Name = "Select_LS_C"
+        Me.Select_LS_C.ReadOnly = True
+        '
+        'BSelect_LS_C
+        '
+        Me.BSelect_LS_C.FillWeight = 44.92386!
+        Me.BSelect_LS_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BSelect_LS_C.HeaderText = "Select"
+        Me.BSelect_LS_C.Name = "BSelect_LS_C"
+        '
+        'ItemCode_LS_C
+        '
+        Me.ItemCode_LS_C.DataPropertyName = "U_ItemCode"
+        Me.ItemCode_LS_C.HeaderText = "Item Code"
+        Me.ItemCode_LS_C.Name = "ItemCode_LS_C"
+        Me.ItemCode_LS_C.ReadOnly = True
+        Me.ItemCode_LS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ItemCode_LS_C.Visible = False
+        '
+        'ItemName_LS_C
+        '
+        Me.ItemName_LS_C.DataPropertyName = "U_ItemName"
+        Me.ItemName_LS_C.FillWeight = 89.84772!
+        Me.ItemName_LS_C.HeaderText = "Item Name"
+        Me.ItemName_LS_C.Name = "ItemName_LS_C"
+        Me.ItemName_LS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Quantity_LS_C
+        '
+        Me.Quantity_LS_C.DataPropertyName = "Qty"
+        DataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle39.Format = "N2"
+        Me.Quantity_LS_C.DefaultCellStyle = DataGridViewCellStyle39
+        Me.Quantity_LS_C.FillWeight = 89.84772!
+        Me.Quantity_LS_C.HeaderText = "Quantity"
+        Me.Quantity_LS_C.Name = "Quantity_LS_C"
+        Me.Quantity_LS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Dislike_LS_C
+        '
+        Me.Dislike_LS_C.DataPropertyName = "U_Dislike"
+        DataGridViewCellStyle40.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.Red
+        Me.Dislike_LS_C.DefaultCellStyle = DataGridViewCellStyle40
+        Me.Dislike_LS_C.FillWeight = 89.84772!
+        Me.Dislike_LS_C.HeaderText = "Dislike"
+        Me.Dislike_LS_C.Name = "Dislike_LS_C"
+        Me.Dislike_LS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Medical_LS_C
+        '
+        Me.Medical_LS_C.DataPropertyName = "U_Medical"
+        DataGridViewCellStyle41.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.Red
+        Me.Medical_LS_C.DefaultCellStyle = DataGridViewCellStyle41
+        Me.Medical_LS_C.FillWeight = 89.84772!
+        Me.Medical_LS_C.HeaderText = "Medical"
+        Me.Medical_LS_C.Name = "Medical_LS_C"
+        Me.Medical_LS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Remarks_LS_C
+        '
+        Me.Remarks_LS_C.DataPropertyName = "Remarks"
+        DataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle42.NullValue = Nothing
+        Me.Remarks_LS_C.DefaultCellStyle = DataGridViewCellStyle42
+        Me.Remarks_LS_C.FillWeight = 149.7462!
+        Me.Remarks_LS_C.HeaderText = "Remarks"
+        Me.Remarks_LS_C.Name = "Remarks_LS_C"
+        Me.Remarks_LS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'tpSnack
         '
@@ -1194,9 +1700,88 @@ Partial Class PSWizard
         Me.dgv_SK_R.MultiSelect = False
         Me.dgv_SK_R.Name = "dgv_SK_R"
         Me.dgv_SK_R.RowHeadersVisible = False
-        Me.dgv_SK_R.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_SK_R.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgv_SK_R.Size = New System.Drawing.Size(694, 87)
         Me.dgv_SK_R.TabIndex = 1
+        '
+        'Select_SK_R
+        '
+        Me.Select_SK_R.DataPropertyName = "Select"
+        Me.Select_SK_R.FillWeight = 35.93909!
+        Me.Select_SK_R.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Select_SK_R.HeaderText = "Select"
+        Me.Select_SK_R.Name = "Select_SK_R"
+        Me.Select_SK_R.ReadOnly = True
+        '
+        'BSelect_SK_R
+        '
+        Me.BSelect_SK_R.FillWeight = 44.92386!
+        Me.BSelect_SK_R.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BSelect_SK_R.HeaderText = "Select"
+        Me.BSelect_SK_R.Name = "BSelect_SK_R"
+        '
+        'ItemCode_SK_R
+        '
+        Me.ItemCode_SK_R.DataPropertyName = "U_ItemCode"
+        Me.ItemCode_SK_R.HeaderText = "Item Code"
+        Me.ItemCode_SK_R.Name = "ItemCode_SK_R"
+        Me.ItemCode_SK_R.ReadOnly = True
+        Me.ItemCode_SK_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ItemCode_SK_R.Visible = False
+        '
+        'ItemName_SK_R
+        '
+        Me.ItemName_SK_R.DataPropertyName = "U_ItemName"
+        Me.ItemName_SK_R.FillWeight = 89.84772!
+        Me.ItemName_SK_R.HeaderText = "Item Name"
+        Me.ItemName_SK_R.Name = "ItemName_SK_R"
+        Me.ItemName_SK_R.ReadOnly = True
+        Me.ItemName_SK_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Quantity_SK_R
+        '
+        Me.Quantity_SK_R.DataPropertyName = "Qty"
+        DataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle45.Format = "N2"
+        DataGridViewCellStyle45.NullValue = "0"
+        Me.Quantity_SK_R.DefaultCellStyle = DataGridViewCellStyle45
+        Me.Quantity_SK_R.FillWeight = 89.84772!
+        Me.Quantity_SK_R.HeaderText = "Quantity"
+        Me.Quantity_SK_R.Name = "Quantity_SK_R"
+        Me.Quantity_SK_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Dislike_SK_R
+        '
+        Me.Dislike_SK_R.DataPropertyName = "U_Dislike"
+        DataGridViewCellStyle46.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.Red
+        Me.Dislike_SK_R.DefaultCellStyle = DataGridViewCellStyle46
+        Me.Dislike_SK_R.FillWeight = 89.84772!
+        Me.Dislike_SK_R.HeaderText = "Dislike"
+        Me.Dislike_SK_R.Name = "Dislike_SK_R"
+        Me.Dislike_SK_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Medical_SK_R
+        '
+        Me.Medical_SK_R.DataPropertyName = "U_Medical"
+        DataGridViewCellStyle47.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle47.SelectionForeColor = System.Drawing.Color.Red
+        Me.Medical_SK_R.DefaultCellStyle = DataGridViewCellStyle47
+        Me.Medical_SK_R.FillWeight = 89.84772!
+        Me.Medical_SK_R.HeaderText = "Medical"
+        Me.Medical_SK_R.Name = "Medical_SK_R"
+        Me.Medical_SK_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Remarks_SK_R
+        '
+        Me.Remarks_SK_R.DataPropertyName = "Remarks"
+        DataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle48.NullValue = Nothing
+        Me.Remarks_SK_R.DefaultCellStyle = DataGridViewCellStyle48
+        Me.Remarks_SK_R.FillWeight = 149.7462!
+        Me.Remarks_SK_R.HeaderText = "Remarks"
+        Me.Remarks_SK_R.Name = "Remarks_SK_R"
+        Me.Remarks_SK_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'dgv_SK_C
         '
@@ -1232,9 +1817,86 @@ Partial Class PSWizard
         Me.dgv_SK_C.MultiSelect = False
         Me.dgv_SK_C.Name = "dgv_SK_C"
         Me.dgv_SK_C.RowHeadersVisible = False
-        Me.dgv_SK_C.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_SK_C.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgv_SK_C.Size = New System.Drawing.Size(694, 109)
         Me.dgv_SK_C.TabIndex = 2
+        '
+        'Select_SK_C
+        '
+        Me.Select_SK_C.DataPropertyName = "Select"
+        Me.Select_SK_C.FillWeight = 35.93909!
+        Me.Select_SK_C.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Select_SK_C.HeaderText = "Select"
+        Me.Select_SK_C.Name = "Select_SK_C"
+        Me.Select_SK_C.ReadOnly = True
+        '
+        'BSelect_SK_C
+        '
+        Me.BSelect_SK_C.FillWeight = 44.92386!
+        Me.BSelect_SK_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BSelect_SK_C.HeaderText = "Select"
+        Me.BSelect_SK_C.Name = "BSelect_SK_C"
+        '
+        'ItemCode_SK_C
+        '
+        Me.ItemCode_SK_C.DataPropertyName = "U_ItemCode"
+        Me.ItemCode_SK_C.HeaderText = "Item Code"
+        Me.ItemCode_SK_C.Name = "ItemCode_SK_C"
+        Me.ItemCode_SK_C.ReadOnly = True
+        Me.ItemCode_SK_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ItemCode_SK_C.Visible = False
+        '
+        'ItemName_SK_C
+        '
+        Me.ItemName_SK_C.DataPropertyName = "U_ItemName"
+        Me.ItemName_SK_C.FillWeight = 89.84772!
+        Me.ItemName_SK_C.HeaderText = "Item Name"
+        Me.ItemName_SK_C.Name = "ItemName_SK_C"
+        Me.ItemName_SK_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Quantity_SK_C
+        '
+        Me.Quantity_SK_C.DataPropertyName = "Qty"
+        DataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle51.Format = "N2"
+        Me.Quantity_SK_C.DefaultCellStyle = DataGridViewCellStyle51
+        Me.Quantity_SK_C.FillWeight = 89.84772!
+        Me.Quantity_SK_C.HeaderText = "Quantity"
+        Me.Quantity_SK_C.Name = "Quantity_SK_C"
+        Me.Quantity_SK_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Dislike_SK_C
+        '
+        Me.Dislike_SK_C.DataPropertyName = "U_Dislike"
+        DataGridViewCellStyle52.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle52.SelectionForeColor = System.Drawing.Color.Red
+        Me.Dislike_SK_C.DefaultCellStyle = DataGridViewCellStyle52
+        Me.Dislike_SK_C.FillWeight = 89.84772!
+        Me.Dislike_SK_C.HeaderText = "Dislike"
+        Me.Dislike_SK_C.Name = "Dislike_SK_C"
+        Me.Dislike_SK_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Medical_SK_C
+        '
+        Me.Medical_SK_C.DataPropertyName = "U_Medical"
+        DataGridViewCellStyle53.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle53.SelectionForeColor = System.Drawing.Color.Red
+        Me.Medical_SK_C.DefaultCellStyle = DataGridViewCellStyle53
+        Me.Medical_SK_C.FillWeight = 89.84772!
+        Me.Medical_SK_C.HeaderText = "Medical"
+        Me.Medical_SK_C.Name = "Medical_SK_C"
+        Me.Medical_SK_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Remarks_SK_C
+        '
+        Me.Remarks_SK_C.DataPropertyName = "Remarks"
+        DataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle54.NullValue = Nothing
+        Me.Remarks_SK_C.DefaultCellStyle = DataGridViewCellStyle54
+        Me.Remarks_SK_C.FillWeight = 149.7462!
+        Me.Remarks_SK_C.HeaderText = "Remarks"
+        Me.Remarks_SK_C.Name = "Remarks_SK_C"
+        Me.Remarks_SK_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'tpDinner
         '
@@ -1299,9 +1961,88 @@ Partial Class PSWizard
         Me.dgv_DI_R.MultiSelect = False
         Me.dgv_DI_R.Name = "dgv_DI_R"
         Me.dgv_DI_R.RowHeadersVisible = False
-        Me.dgv_DI_R.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_DI_R.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgv_DI_R.Size = New System.Drawing.Size(694, 87)
         Me.dgv_DI_R.TabIndex = 1
+        '
+        'Select_DI_R
+        '
+        Me.Select_DI_R.DataPropertyName = "Select"
+        Me.Select_DI_R.FillWeight = 35.37507!
+        Me.Select_DI_R.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Select_DI_R.HeaderText = "Select"
+        Me.Select_DI_R.Name = "Select_DI_R"
+        Me.Select_DI_R.ReadOnly = True
+        '
+        'BSelect_DI_R
+        '
+        Me.BSelect_DI_R.FillWeight = 88.43768!
+        Me.BSelect_DI_R.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BSelect_DI_R.HeaderText = "Select"
+        Me.BSelect_DI_R.Name = "BSelect_DI_R"
+        '
+        'ItemCode_DI_R
+        '
+        Me.ItemCode_DI_R.DataPropertyName = "U_ItemCode"
+        Me.ItemCode_DI_R.HeaderText = "Item Code"
+        Me.ItemCode_DI_R.Name = "ItemCode_DI_R"
+        Me.ItemCode_DI_R.ReadOnly = True
+        Me.ItemCode_DI_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ItemCode_DI_R.Visible = False
+        '
+        'ItemName_DI_R
+        '
+        Me.ItemName_DI_R.DataPropertyName = "U_ItemName"
+        Me.ItemName_DI_R.FillWeight = 88.43768!
+        Me.ItemName_DI_R.HeaderText = "Item Name"
+        Me.ItemName_DI_R.Name = "ItemName_DI_R"
+        Me.ItemName_DI_R.ReadOnly = True
+        Me.ItemName_DI_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Quantity_DI_R
+        '
+        Me.Quantity_DI_R.DataPropertyName = "Qty"
+        DataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle57.Format = "N2"
+        DataGridViewCellStyle57.NullValue = "0"
+        Me.Quantity_DI_R.DefaultCellStyle = DataGridViewCellStyle57
+        Me.Quantity_DI_R.FillWeight = 88.43768!
+        Me.Quantity_DI_R.HeaderText = "Quantity"
+        Me.Quantity_DI_R.Name = "Quantity_DI_R"
+        Me.Quantity_DI_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Dislike_DI_R
+        '
+        Me.Dislike_DI_R.DataPropertyName = "U_Dislike"
+        DataGridViewCellStyle58.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle58.SelectionForeColor = System.Drawing.Color.Red
+        Me.Dislike_DI_R.DefaultCellStyle = DataGridViewCellStyle58
+        Me.Dislike_DI_R.FillWeight = 88.43768!
+        Me.Dislike_DI_R.HeaderText = "Dislike"
+        Me.Dislike_DI_R.Name = "Dislike_DI_R"
+        Me.Dislike_DI_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Medical_DI_R
+        '
+        Me.Medical_DI_R.DataPropertyName = "U_Medical"
+        DataGridViewCellStyle59.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle59.SelectionForeColor = System.Drawing.Color.Red
+        Me.Medical_DI_R.DefaultCellStyle = DataGridViewCellStyle59
+        Me.Medical_DI_R.FillWeight = 88.43768!
+        Me.Medical_DI_R.HeaderText = "Medical"
+        Me.Medical_DI_R.Name = "Medical_DI_R"
+        Me.Medical_DI_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Remarks_DI_R
+        '
+        Me.Remarks_DI_R.DataPropertyName = "Remarks"
+        DataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle60.NullValue = Nothing
+        Me.Remarks_DI_R.DefaultCellStyle = DataGridViewCellStyle60
+        Me.Remarks_DI_R.FillWeight = 162.4366!
+        Me.Remarks_DI_R.HeaderText = "Remarks"
+        Me.Remarks_DI_R.Name = "Remarks_DI_R"
+        Me.Remarks_DI_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'dgv_DI_C
         '
@@ -1337,9 +2078,86 @@ Partial Class PSWizard
         Me.dgv_DI_C.MultiSelect = False
         Me.dgv_DI_C.Name = "dgv_DI_C"
         Me.dgv_DI_C.RowHeadersVisible = False
-        Me.dgv_DI_C.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_DI_C.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgv_DI_C.Size = New System.Drawing.Size(694, 109)
         Me.dgv_DI_C.TabIndex = 2
+        '
+        'Select_DI_C
+        '
+        Me.Select_DI_C.DataPropertyName = "Select"
+        Me.Select_DI_C.FillWeight = 35.93909!
+        Me.Select_DI_C.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Select_DI_C.HeaderText = "Select"
+        Me.Select_DI_C.Name = "Select_DI_C"
+        Me.Select_DI_C.ReadOnly = True
+        '
+        'BSelect_DI_C
+        '
+        Me.BSelect_DI_C.FillWeight = 44.92386!
+        Me.BSelect_DI_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BSelect_DI_C.HeaderText = "Select"
+        Me.BSelect_DI_C.Name = "BSelect_DI_C"
+        '
+        'ItemCode_DI_C
+        '
+        Me.ItemCode_DI_C.DataPropertyName = "U_ItemCode"
+        Me.ItemCode_DI_C.HeaderText = "Item Code"
+        Me.ItemCode_DI_C.Name = "ItemCode_DI_C"
+        Me.ItemCode_DI_C.ReadOnly = True
+        Me.ItemCode_DI_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ItemCode_DI_C.Visible = False
+        '
+        'ItemName_DI_C
+        '
+        Me.ItemName_DI_C.DataPropertyName = "U_ItemName"
+        Me.ItemName_DI_C.FillWeight = 89.84772!
+        Me.ItemName_DI_C.HeaderText = "Item Name"
+        Me.ItemName_DI_C.Name = "ItemName_DI_C"
+        Me.ItemName_DI_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Quantity_DI_C
+        '
+        Me.Quantity_DI_C.DataPropertyName = "Qty"
+        DataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle63.Format = "N2"
+        Me.Quantity_DI_C.DefaultCellStyle = DataGridViewCellStyle63
+        Me.Quantity_DI_C.FillWeight = 89.84772!
+        Me.Quantity_DI_C.HeaderText = "Quantity"
+        Me.Quantity_DI_C.Name = "Quantity_DI_C"
+        Me.Quantity_DI_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Dislike_DI_C
+        '
+        Me.Dislike_DI_C.DataPropertyName = "U_Dislike"
+        DataGridViewCellStyle64.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle64.SelectionForeColor = System.Drawing.Color.Red
+        Me.Dislike_DI_C.DefaultCellStyle = DataGridViewCellStyle64
+        Me.Dislike_DI_C.FillWeight = 89.84772!
+        Me.Dislike_DI_C.HeaderText = "Dislike"
+        Me.Dislike_DI_C.Name = "Dislike_DI_C"
+        Me.Dislike_DI_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Medical_DI_C
+        '
+        Me.Medical_DI_C.DataPropertyName = "U_Medical"
+        DataGridViewCellStyle65.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle65.SelectionForeColor = System.Drawing.Color.Red
+        Me.Medical_DI_C.DefaultCellStyle = DataGridViewCellStyle65
+        Me.Medical_DI_C.FillWeight = 89.84772!
+        Me.Medical_DI_C.HeaderText = "Medical"
+        Me.Medical_DI_C.Name = "Medical_DI_C"
+        Me.Medical_DI_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Remarks_DI_C
+        '
+        Me.Remarks_DI_C.DataPropertyName = "Remarks"
+        DataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle66.NullValue = Nothing
+        Me.Remarks_DI_C.DefaultCellStyle = DataGridViewCellStyle66
+        Me.Remarks_DI_C.FillWeight = 149.7462!
+        Me.Remarks_DI_C.HeaderText = "Remarks"
+        Me.Remarks_DI_C.Name = "Remarks_DI_C"
+        Me.Remarks_DI_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'tpDinnerSide
         '
@@ -1404,9 +2222,87 @@ Partial Class PSWizard
         Me.dgv_DS_R.MultiSelect = False
         Me.dgv_DS_R.Name = "dgv_DS_R"
         Me.dgv_DS_R.RowHeadersVisible = False
-        Me.dgv_DS_R.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_DS_R.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgv_DS_R.Size = New System.Drawing.Size(694, 87)
         Me.dgv_DS_R.TabIndex = 1
+        '
+        'Select_DS_R
+        '
+        Me.Select_DS_R.DataPropertyName = "Select"
+        Me.Select_DS_R.FillWeight = 19.14401!
+        Me.Select_DS_R.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Select_DS_R.HeaderText = "Select"
+        Me.Select_DS_R.Name = "Select_DS_R"
+        Me.Select_DS_R.ReadOnly = True
+        '
+        'BSelect_DS_R
+        '
+        Me.BSelect_DS_R.FillWeight = 47.86003!
+        Me.BSelect_DS_R.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BSelect_DS_R.HeaderText = "Select"
+        Me.BSelect_DS_R.Name = "BSelect_DS_R"
+        '
+        'ItemCode_DS_R
+        '
+        Me.ItemCode_DS_R.DataPropertyName = "U_ItemCode"
+        Me.ItemCode_DS_R.HeaderText = "Item Code"
+        Me.ItemCode_DS_R.Name = "ItemCode_DS_R"
+        Me.ItemCode_DS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ItemCode_DS_R.Visible = False
+        '
+        'ItemName_DS_R
+        '
+        Me.ItemName_DS_R.DataPropertyName = "U_ItemName"
+        Me.ItemName_DS_R.FillWeight = 47.86003!
+        Me.ItemName_DS_R.HeaderText = "Item Name"
+        Me.ItemName_DS_R.Name = "ItemName_DS_R"
+        Me.ItemName_DS_R.ReadOnly = True
+        Me.ItemName_DS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Quantity_DS_R
+        '
+        Me.Quantity_DS_R.DataPropertyName = "Qty"
+        DataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle69.Format = "N2"
+        DataGridViewCellStyle69.NullValue = "0"
+        Me.Quantity_DS_R.DefaultCellStyle = DataGridViewCellStyle69
+        Me.Quantity_DS_R.FillWeight = 31.28463!
+        Me.Quantity_DS_R.HeaderText = "Quantity"
+        Me.Quantity_DS_R.Name = "Quantity_DS_R"
+        Me.Quantity_DS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Dislike_DS_R
+        '
+        Me.Dislike_DS_R.DataPropertyName = "U_Dislike"
+        DataGridViewCellStyle70.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle70.SelectionForeColor = System.Drawing.Color.Red
+        Me.Dislike_DS_R.DefaultCellStyle = DataGridViewCellStyle70
+        Me.Dislike_DS_R.FillWeight = 47.86003!
+        Me.Dislike_DS_R.HeaderText = "Dislike"
+        Me.Dislike_DS_R.Name = "Dislike_DS_R"
+        Me.Dislike_DS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Medical_DS_R
+        '
+        Me.Medical_DS_R.DataPropertyName = "U_Medical"
+        DataGridViewCellStyle71.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle71.SelectionForeColor = System.Drawing.Color.Red
+        Me.Medical_DS_R.DefaultCellStyle = DataGridViewCellStyle71
+        Me.Medical_DS_R.FillWeight = 47.86003!
+        Me.Medical_DS_R.HeaderText = "Medical"
+        Me.Medical_DS_R.Name = "Medical_DS_R"
+        Me.Medical_DS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Remarks_DS_R
+        '
+        Me.Remarks_DS_R.DataPropertyName = "Remarks"
+        DataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle72.NullValue = Nothing
+        Me.Remarks_DS_R.DefaultCellStyle = DataGridViewCellStyle72
+        Me.Remarks_DS_R.FillWeight = 82.26828!
+        Me.Remarks_DS_R.HeaderText = "Remarks"
+        Me.Remarks_DS_R.Name = "Remarks_DS_R"
+        Me.Remarks_DS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'dgv_DS_C
         '
@@ -1442,9 +2338,85 @@ Partial Class PSWizard
         Me.dgv_DS_C.MultiSelect = False
         Me.dgv_DS_C.Name = "dgv_DS_C"
         Me.dgv_DS_C.RowHeadersVisible = False
-        Me.dgv_DS_C.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_DS_C.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.dgv_DS_C.Size = New System.Drawing.Size(694, 109)
         Me.dgv_DS_C.TabIndex = 2
+        '
+        'Select_DS_C
+        '
+        Me.Select_DS_C.DataPropertyName = "Select"
+        Me.Select_DS_C.FillWeight = 34.94146!
+        Me.Select_DS_C.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Select_DS_C.HeaderText = "Select"
+        Me.Select_DS_C.Name = "Select_DS_C"
+        '
+        'BSelect_DS_C
+        '
+        Me.BSelect_DS_C.FillWeight = 43.67682!
+        Me.BSelect_DS_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BSelect_DS_C.HeaderText = "Select"
+        Me.BSelect_DS_C.Name = "BSelect_DS_C"
+        '
+        'ItemCode_DS_C
+        '
+        Me.ItemCode_DS_C.DataPropertyName = "U_ItemCode"
+        Me.ItemCode_DS_C.HeaderText = "Item Code"
+        Me.ItemCode_DS_C.Name = "ItemCode_DS_C"
+        Me.ItemCode_DS_C.ReadOnly = True
+        Me.ItemCode_DS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ItemCode_DS_C.Visible = False
+        '
+        'ItemName_DS_C
+        '
+        Me.ItemName_DS_C.DataPropertyName = "U_ItemName"
+        Me.ItemName_DS_C.FillWeight = 87.35363!
+        Me.ItemName_DS_C.HeaderText = "Item Name"
+        Me.ItemName_DS_C.Name = "ItemName_DS_C"
+        Me.ItemName_DS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Quantity_DS_C
+        '
+        Me.Quantity_DS_C.DataPropertyName = "Qty"
+        DataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle75.Format = "N2"
+        Me.Quantity_DS_C.DefaultCellStyle = DataGridViewCellStyle75
+        Me.Quantity_DS_C.FillWeight = 51.07209!
+        Me.Quantity_DS_C.HeaderText = "Quantity"
+        Me.Quantity_DS_C.Name = "Quantity_DS_C"
+        Me.Quantity_DS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Dislike_DS_C
+        '
+        Me.Dislike_DS_C.DataPropertyName = "U_Dislike"
+        DataGridViewCellStyle76.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle76.SelectionForeColor = System.Drawing.Color.Red
+        Me.Dislike_DS_C.DefaultCellStyle = DataGridViewCellStyle76
+        Me.Dislike_DS_C.FillWeight = 87.35363!
+        Me.Dislike_DS_C.HeaderText = "Dislike"
+        Me.Dislike_DS_C.Name = "Dislike_DS_C"
+        Me.Dislike_DS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Medical_DS_C
+        '
+        Me.Medical_DS_C.DataPropertyName = "U_Medical"
+        DataGridViewCellStyle77.ForeColor = System.Drawing.Color.Red
+        DataGridViewCellStyle77.SelectionForeColor = System.Drawing.Color.Red
+        Me.Medical_DS_C.DefaultCellStyle = DataGridViewCellStyle77
+        Me.Medical_DS_C.FillWeight = 87.35363!
+        Me.Medical_DS_C.HeaderText = "Medical"
+        Me.Medical_DS_C.Name = "Medical_DS_C"
+        Me.Medical_DS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Remarks_DS_C
+        '
+        Me.Remarks_DS_C.DataPropertyName = "Remarks"
+        DataGridViewCellStyle78.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle78.NullValue = Nothing
+        Me.Remarks_DS_C.DefaultCellStyle = DataGridViewCellStyle78
+        Me.Remarks_DS_C.FillWeight = 133.2487!
+        Me.Remarks_DS_C.HeaderText = "Remarks"
+        Me.Remarks_DS_C.Name = "Remarks_DS_C"
+        Me.Remarks_DS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'tlpFooter
         '
@@ -1896,944 +2868,65 @@ Partial Class PSWizard
         Me.btnBack_MC.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnBack_MC.UseVisualStyleBackColor = True
         '
-        'Select_BF_R
+        'cms_Menu_LN
         '
-        Me.Select_BF_R.DataPropertyName = "Select"
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.Format = "N2"
-        DataGridViewCellStyle8.NullValue = "0"
-        Me.Select_BF_R.DefaultCellStyle = DataGridViewCellStyle8
-        Me.Select_BF_R.FillWeight = 36.077!
-        Me.Select_BF_R.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Select_BF_R.HeaderText = "Select"
-        Me.Select_BF_R.Name = "Select_BF_R"
-        Me.Select_BF_R.ReadOnly = True
+        Me.cms_Menu_LN.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2})
+        Me.cms_Menu_LN.Name = "cms_Menu_LN"
+        Me.cms_Menu_LN.Size = New System.Drawing.Size(134, 26)
         '
-        'BSelect_BF_R
+        'ToolStripMenuItem2
         '
-        Me.BSelect_BF_R.FillWeight = 45.09625!
-        Me.BSelect_BF_R.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BSelect_BF_R.HeaderText = "Select"
-        Me.BSelect_BF_R.Name = "BSelect_BF_R"
-        Me.BSelect_BF_R.Text = "Select"
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(133, 22)
+        Me.ToolStripMenuItem2.Text = "Delete Row"
         '
-        'ItemCode_BF_R
+        'cms_Menu_LS
         '
-        Me.ItemCode_BF_R.DataPropertyName = "U_ItemCode"
-        Me.ItemCode_BF_R.HeaderText = "Item Code"
-        Me.ItemCode_BF_R.Name = "ItemCode_BF_R"
-        Me.ItemCode_BF_R.ReadOnly = True
-        Me.ItemCode_BF_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.ItemCode_BF_R.Visible = False
+        Me.cms_Menu_LS.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem3})
+        Me.cms_Menu_LS.Name = "cms_Menu_LN"
+        Me.cms_Menu_LS.Size = New System.Drawing.Size(134, 26)
         '
-        'ItemName_BF_R
+        'ToolStripMenuItem3
         '
-        Me.ItemName_BF_R.DataPropertyName = "U_ItemName"
-        Me.ItemName_BF_R.FillWeight = 102.5539!
-        Me.ItemName_BF_R.HeaderText = "Item Name"
-        Me.ItemName_BF_R.Name = "ItemName_BF_R"
-        Me.ItemName_BF_R.ReadOnly = True
-        Me.ItemName_BF_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(133, 22)
+        Me.ToolStripMenuItem3.Text = "Delete Row"
         '
-        'Quantity_BF_R
+        'cms_Menu_SK
         '
-        Me.Quantity_BF_R.DataPropertyName = "Qty"
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle9.Format = "N2"
-        DataGridViewCellStyle9.NullValue = "0"
-        Me.Quantity_BF_R.DefaultCellStyle = DataGridViewCellStyle9
-        Me.Quantity_BF_R.FillWeight = 102.5539!
-        Me.Quantity_BF_R.HeaderText = "Quantity"
-        Me.Quantity_BF_R.Name = "Quantity_BF_R"
-        Me.Quantity_BF_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.cms_Menu_SK.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem4})
+        Me.cms_Menu_SK.Name = "cms_Menu_LN"
+        Me.cms_Menu_SK.Size = New System.Drawing.Size(134, 26)
         '
-        'Dislike_BF_R
+        'ToolStripMenuItem4
         '
-        Me.Dislike_BF_R.DataPropertyName = "U_Dislike"
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Red
-        Me.Dislike_BF_R.DefaultCellStyle = DataGridViewCellStyle10
-        Me.Dislike_BF_R.FillWeight = 102.5539!
-        Me.Dislike_BF_R.HeaderText = "Dislike"
-        Me.Dislike_BF_R.Name = "Dislike_BF_R"
-        Me.Dislike_BF_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(133, 22)
+        Me.ToolStripMenuItem4.Text = "Delete Row"
         '
-        'Medical_BF_R
+        'cms_Menu_DN
         '
-        Me.Medical_BF_R.DataPropertyName = "U_Medical"
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Red
-        Me.Medical_BF_R.DefaultCellStyle = DataGridViewCellStyle11
-        Me.Medical_BF_R.FillWeight = 102.5539!
-        Me.Medical_BF_R.HeaderText = "Medical"
-        Me.Medical_BF_R.Name = "Medical_BF_R"
-        Me.Medical_BF_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.cms_Menu_DN.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem5})
+        Me.cms_Menu_DN.Name = "cms_Menu_LN"
+        Me.cms_Menu_DN.Size = New System.Drawing.Size(134, 26)
         '
-        'Remarks_BF_R
+        'ToolStripMenuItem5
         '
-        Me.Remarks_BF_R.DataPropertyName = "Remarks"
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.NullValue = Nothing
-        Me.Remarks_BF_R.DefaultCellStyle = DataGridViewCellStyle12
-        Me.Remarks_BF_R.FillWeight = 167.1391!
-        Me.Remarks_BF_R.HeaderText = "Remarks"
-        Me.Remarks_BF_R.Name = "Remarks_BF_R"
-        Me.Remarks_BF_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(133, 22)
+        Me.ToolStripMenuItem5.Text = "Delete Row"
         '
-        'Select_BF_C
+        'cms_Menu_DS
         '
-        Me.Select_BF_C.DataPropertyName = "Select"
-        Me.Select_BF_C.FillWeight = 35.93909!
-        Me.Select_BF_C.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Select_BF_C.HeaderText = "Select"
-        Me.Select_BF_C.Name = "Select_BF_C"
-        Me.Select_BF_C.ReadOnly = True
+        Me.cms_Menu_DS.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem6})
+        Me.cms_Menu_DS.Name = "cms_Menu_LN"
+        Me.cms_Menu_DS.Size = New System.Drawing.Size(134, 26)
         '
-        'BSelect_BF_C
+        'ToolStripMenuItem6
         '
-        Me.BSelect_BF_C.FillWeight = 44.92386!
-        Me.BSelect_BF_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BSelect_BF_C.HeaderText = "Select"
-        Me.BSelect_BF_C.Name = "BSelect_BF_C"
-        '
-        'ItemCode_BF_C
-        '
-        Me.ItemCode_BF_C.DataPropertyName = "U_ItemCode"
-        Me.ItemCode_BF_C.HeaderText = "Item Code"
-        Me.ItemCode_BF_C.Name = "ItemCode_BF_C"
-        Me.ItemCode_BF_C.ReadOnly = True
-        Me.ItemCode_BF_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.ItemCode_BF_C.Visible = False
-        '
-        'ItemName_BF_C
-        '
-        Me.ItemName_BF_C.DataPropertyName = "U_ItemName"
-        Me.ItemName_BF_C.FillWeight = 89.84772!
-        Me.ItemName_BF_C.HeaderText = "Item Name"
-        Me.ItemName_BF_C.Name = "ItemName_BF_C"
-        Me.ItemName_BF_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Quantity_BF_C
-        '
-        Me.Quantity_BF_C.DataPropertyName = "Qty"
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle15.Format = "N2"
-        DataGridViewCellStyle15.NullValue = "0"
-        Me.Quantity_BF_C.DefaultCellStyle = DataGridViewCellStyle15
-        Me.Quantity_BF_C.FillWeight = 89.84772!
-        Me.Quantity_BF_C.HeaderText = "Quantity"
-        Me.Quantity_BF_C.Name = "Quantity_BF_C"
-        Me.Quantity_BF_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Dislike_BF_C
-        '
-        Me.Dislike_BF_C.DataPropertyName = "U_Dislike"
-        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Red
-        Me.Dislike_BF_C.DefaultCellStyle = DataGridViewCellStyle16
-        Me.Dislike_BF_C.FillWeight = 89.84772!
-        Me.Dislike_BF_C.HeaderText = "Dislike"
-        Me.Dislike_BF_C.Name = "Dislike_BF_C"
-        Me.Dislike_BF_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Medical_BF_C
-        '
-        Me.Medical_BF_C.DataPropertyName = "U_Medical"
-        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Red
-        Me.Medical_BF_C.DefaultCellStyle = DataGridViewCellStyle17
-        Me.Medical_BF_C.FillWeight = 89.84772!
-        Me.Medical_BF_C.HeaderText = "Medical"
-        Me.Medical_BF_C.Name = "Medical_BF_C"
-        Me.Medical_BF_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Remarks_BF_C
-        '
-        Me.Remarks_BF_C.DataPropertyName = "Remarks"
-        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomLeft
-        DataGridViewCellStyle18.NullValue = Nothing
-        Me.Remarks_BF_C.DefaultCellStyle = DataGridViewCellStyle18
-        Me.Remarks_BF_C.FillWeight = 149.7462!
-        Me.Remarks_BF_C.HeaderText = "Remarks"
-        Me.Remarks_BF_C.Name = "Remarks_BF_C"
-        Me.Remarks_BF_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Select_LN_R
-        '
-        Me.Select_LN_R.DataPropertyName = "Select"
-        Me.Select_LN_R.FillWeight = 35.93909!
-        Me.Select_LN_R.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Select_LN_R.HeaderText = "Select"
-        Me.Select_LN_R.Name = "Select_LN_R"
-        '
-        'BSelect_LN_R
-        '
-        Me.BSelect_LN_R.FillWeight = 44.92386!
-        Me.BSelect_LN_R.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BSelect_LN_R.HeaderText = "Select"
-        Me.BSelect_LN_R.Name = "BSelect_LN_R"
-        '
-        'ItemCode_LN_R
-        '
-        Me.ItemCode_LN_R.DataPropertyName = "U_ItemCode"
-        Me.ItemCode_LN_R.HeaderText = "Item Code"
-        Me.ItemCode_LN_R.Name = "ItemCode_LN_R"
-        Me.ItemCode_LN_R.ReadOnly = True
-        Me.ItemCode_LN_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.ItemCode_LN_R.Visible = False
-        '
-        'ItemName_LN_R
-        '
-        Me.ItemName_LN_R.DataPropertyName = "U_ItemName"
-        Me.ItemName_LN_R.FillWeight = 89.84772!
-        Me.ItemName_LN_R.HeaderText = "Item Name"
-        Me.ItemName_LN_R.Name = "ItemName_LN_R"
-        Me.ItemName_LN_R.ReadOnly = True
-        Me.ItemName_LN_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Quantity_LN_R
-        '
-        Me.Quantity_LN_R.DataPropertyName = "Qty"
-        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle21.Format = "N2"
-        DataGridViewCellStyle21.NullValue = "0"
-        Me.Quantity_LN_R.DefaultCellStyle = DataGridViewCellStyle21
-        Me.Quantity_LN_R.FillWeight = 89.84772!
-        Me.Quantity_LN_R.HeaderText = "Quantity"
-        Me.Quantity_LN_R.Name = "Quantity_LN_R"
-        Me.Quantity_LN_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Dislike_LN_R
-        '
-        Me.Dislike_LN_R.DataPropertyName = "U_Dislike"
-        DataGridViewCellStyle22.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Red
-        Me.Dislike_LN_R.DefaultCellStyle = DataGridViewCellStyle22
-        Me.Dislike_LN_R.FillWeight = 89.84772!
-        Me.Dislike_LN_R.HeaderText = "Dislike"
-        Me.Dislike_LN_R.Name = "Dislike_LN_R"
-        Me.Dislike_LN_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Medical_LN_R
-        '
-        Me.Medical_LN_R.DataPropertyName = "U_Medical"
-        DataGridViewCellStyle23.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Red
-        Me.Medical_LN_R.DefaultCellStyle = DataGridViewCellStyle23
-        Me.Medical_LN_R.FillWeight = 89.84772!
-        Me.Medical_LN_R.HeaderText = "Medical"
-        Me.Medical_LN_R.Name = "Medical_LN_R"
-        Me.Medical_LN_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Remarks_LN_R
-        '
-        Me.Remarks_LN_R.DataPropertyName = "Remarks"
-        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle24.NullValue = Nothing
-        Me.Remarks_LN_R.DefaultCellStyle = DataGridViewCellStyle24
-        Me.Remarks_LN_R.FillWeight = 149.7462!
-        Me.Remarks_LN_R.HeaderText = "Remarks"
-        Me.Remarks_LN_R.Name = "Remarks_LN_R"
-        Me.Remarks_LN_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Select_LN_C
-        '
-        Me.Select_LN_C.DataPropertyName = "Select"
-        Me.Select_LN_C.FillWeight = 35.93909!
-        Me.Select_LN_C.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Select_LN_C.HeaderText = "Select"
-        Me.Select_LN_C.Name = "Select_LN_C"
-        Me.Select_LN_C.ReadOnly = True
-        '
-        'BSelect_LN_C
-        '
-        Me.BSelect_LN_C.FillWeight = 44.92386!
-        Me.BSelect_LN_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BSelect_LN_C.HeaderText = "Select"
-        Me.BSelect_LN_C.Name = "BSelect_LN_C"
-        '
-        'ItemCode_LN_C
-        '
-        Me.ItemCode_LN_C.DataPropertyName = "U_ItemCode"
-        Me.ItemCode_LN_C.HeaderText = "Item Code"
-        Me.ItemCode_LN_C.Name = "ItemCode_LN_C"
-        Me.ItemCode_LN_C.ReadOnly = True
-        Me.ItemCode_LN_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.ItemCode_LN_C.Visible = False
-        '
-        'ItemName_LN_C
-        '
-        Me.ItemName_LN_C.DataPropertyName = "U_ItemName"
-        Me.ItemName_LN_C.FillWeight = 89.84772!
-        Me.ItemName_LN_C.HeaderText = "Item Name"
-        Me.ItemName_LN_C.Name = "ItemName_LN_C"
-        Me.ItemName_LN_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Quantity_LN_C
-        '
-        Me.Quantity_LN_C.DataPropertyName = "Qty"
-        DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle27.Format = "N2"
-        Me.Quantity_LN_C.DefaultCellStyle = DataGridViewCellStyle27
-        Me.Quantity_LN_C.FillWeight = 89.84772!
-        Me.Quantity_LN_C.HeaderText = "Quantity"
-        Me.Quantity_LN_C.Name = "Quantity_LN_C"
-        Me.Quantity_LN_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Dislike_LN_C
-        '
-        Me.Dislike_LN_C.DataPropertyName = "U_Dislike"
-        DataGridViewCellStyle28.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.Red
-        Me.Dislike_LN_C.DefaultCellStyle = DataGridViewCellStyle28
-        Me.Dislike_LN_C.FillWeight = 89.84772!
-        Me.Dislike_LN_C.HeaderText = "Dislike"
-        Me.Dislike_LN_C.Name = "Dislike_LN_C"
-        Me.Dislike_LN_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Medical_LN_C
-        '
-        Me.Medical_LN_C.DataPropertyName = "U_Medical"
-        DataGridViewCellStyle29.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.Red
-        Me.Medical_LN_C.DefaultCellStyle = DataGridViewCellStyle29
-        Me.Medical_LN_C.FillWeight = 89.84772!
-        Me.Medical_LN_C.HeaderText = "Medical"
-        Me.Medical_LN_C.Name = "Medical_LN_C"
-        Me.Medical_LN_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Remarks_LN_C
-        '
-        Me.Remarks_LN_C.DataPropertyName = "Remarks"
-        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle30.NullValue = Nothing
-        Me.Remarks_LN_C.DefaultCellStyle = DataGridViewCellStyle30
-        Me.Remarks_LN_C.FillWeight = 149.7462!
-        Me.Remarks_LN_C.HeaderText = "Remarks"
-        Me.Remarks_LN_C.Name = "Remarks_LN_C"
-        Me.Remarks_LN_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Select_LS_R
-        '
-        Me.Select_LS_R.DataPropertyName = "Select"
-        Me.Select_LS_R.FillWeight = 35.93909!
-        Me.Select_LS_R.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Select_LS_R.HeaderText = "Select"
-        Me.Select_LS_R.Name = "Select_LS_R"
-        Me.Select_LS_R.ReadOnly = True
-        '
-        'BSelect_LS_R
-        '
-        Me.BSelect_LS_R.FillWeight = 44.92386!
-        Me.BSelect_LS_R.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BSelect_LS_R.HeaderText = "Select"
-        Me.BSelect_LS_R.Name = "BSelect_LS_R"
-        '
-        'ItemCode_LS_R
-        '
-        Me.ItemCode_LS_R.DataPropertyName = "U_ItemCode"
-        Me.ItemCode_LS_R.HeaderText = "Item Code"
-        Me.ItemCode_LS_R.Name = "ItemCode_LS_R"
-        Me.ItemCode_LS_R.ReadOnly = True
-        Me.ItemCode_LS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.ItemCode_LS_R.Visible = False
-        '
-        'ItemName_LS_R
-        '
-        Me.ItemName_LS_R.DataPropertyName = "U_ItemName"
-        Me.ItemName_LS_R.FillWeight = 89.84772!
-        Me.ItemName_LS_R.HeaderText = "Item Name"
-        Me.ItemName_LS_R.Name = "ItemName_LS_R"
-        Me.ItemName_LS_R.ReadOnly = True
-        Me.ItemName_LS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Quantity_LS_R
-        '
-        Me.Quantity_LS_R.DataPropertyName = "Qty"
-        DataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle33.Format = "N2"
-        DataGridViewCellStyle33.NullValue = "0"
-        Me.Quantity_LS_R.DefaultCellStyle = DataGridViewCellStyle33
-        Me.Quantity_LS_R.FillWeight = 89.84772!
-        Me.Quantity_LS_R.HeaderText = "Quantity"
-        Me.Quantity_LS_R.Name = "Quantity_LS_R"
-        Me.Quantity_LS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Dislike_LS_R
-        '
-        Me.Dislike_LS_R.DataPropertyName = "U_Dislike"
-        DataGridViewCellStyle34.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.Red
-        Me.Dislike_LS_R.DefaultCellStyle = DataGridViewCellStyle34
-        Me.Dislike_LS_R.FillWeight = 89.84772!
-        Me.Dislike_LS_R.HeaderText = "Dislike"
-        Me.Dislike_LS_R.Name = "Dislike_LS_R"
-        Me.Dislike_LS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Medical_LS_R
-        '
-        Me.Medical_LS_R.DataPropertyName = "U_Medical"
-        DataGridViewCellStyle35.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.Red
-        Me.Medical_LS_R.DefaultCellStyle = DataGridViewCellStyle35
-        Me.Medical_LS_R.FillWeight = 89.84772!
-        Me.Medical_LS_R.HeaderText = "Medical"
-        Me.Medical_LS_R.Name = "Medical_LS_R"
-        Me.Medical_LS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Remarks_LS_R
-        '
-        Me.Remarks_LS_R.DataPropertyName = "Remarks"
-        DataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle36.NullValue = Nothing
-        Me.Remarks_LS_R.DefaultCellStyle = DataGridViewCellStyle36
-        Me.Remarks_LS_R.FillWeight = 149.7462!
-        Me.Remarks_LS_R.HeaderText = "Remarks"
-        Me.Remarks_LS_R.Name = "Remarks_LS_R"
-        Me.Remarks_LS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Select_LS_C
-        '
-        Me.Select_LS_C.DataPropertyName = "Select"
-        Me.Select_LS_C.FillWeight = 35.93909!
-        Me.Select_LS_C.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Select_LS_C.HeaderText = "Select"
-        Me.Select_LS_C.Name = "Select_LS_C"
-        Me.Select_LS_C.ReadOnly = True
-        '
-        'BSelect_LS_C
-        '
-        Me.BSelect_LS_C.FillWeight = 44.92386!
-        Me.BSelect_LS_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BSelect_LS_C.HeaderText = "Select"
-        Me.BSelect_LS_C.Name = "BSelect_LS_C"
-        '
-        'ItemCode_LS_C
-        '
-        Me.ItemCode_LS_C.DataPropertyName = "U_ItemCode"
-        Me.ItemCode_LS_C.HeaderText = "Item Code"
-        Me.ItemCode_LS_C.Name = "ItemCode_LS_C"
-        Me.ItemCode_LS_C.ReadOnly = True
-        Me.ItemCode_LS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.ItemCode_LS_C.Visible = False
-        '
-        'ItemName_LS_C
-        '
-        Me.ItemName_LS_C.DataPropertyName = "U_ItemName"
-        Me.ItemName_LS_C.FillWeight = 89.84772!
-        Me.ItemName_LS_C.HeaderText = "Item Name"
-        Me.ItemName_LS_C.Name = "ItemName_LS_C"
-        Me.ItemName_LS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Quantity_LS_C
-        '
-        Me.Quantity_LS_C.DataPropertyName = "Qty"
-        DataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle39.Format = "N2"
-        Me.Quantity_LS_C.DefaultCellStyle = DataGridViewCellStyle39
-        Me.Quantity_LS_C.FillWeight = 89.84772!
-        Me.Quantity_LS_C.HeaderText = "Quantity"
-        Me.Quantity_LS_C.Name = "Quantity_LS_C"
-        Me.Quantity_LS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Dislike_LS_C
-        '
-        Me.Dislike_LS_C.DataPropertyName = "U_Dislike"
-        DataGridViewCellStyle40.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.Red
-        Me.Dislike_LS_C.DefaultCellStyle = DataGridViewCellStyle40
-        Me.Dislike_LS_C.FillWeight = 89.84772!
-        Me.Dislike_LS_C.HeaderText = "Dislike"
-        Me.Dislike_LS_C.Name = "Dislike_LS_C"
-        Me.Dislike_LS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Medical_LS_C
-        '
-        Me.Medical_LS_C.DataPropertyName = "U_Medical"
-        DataGridViewCellStyle41.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.Red
-        Me.Medical_LS_C.DefaultCellStyle = DataGridViewCellStyle41
-        Me.Medical_LS_C.FillWeight = 89.84772!
-        Me.Medical_LS_C.HeaderText = "Medical"
-        Me.Medical_LS_C.Name = "Medical_LS_C"
-        Me.Medical_LS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Remarks_LS_C
-        '
-        Me.Remarks_LS_C.DataPropertyName = "Remarks"
-        DataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle42.NullValue = Nothing
-        Me.Remarks_LS_C.DefaultCellStyle = DataGridViewCellStyle42
-        Me.Remarks_LS_C.FillWeight = 149.7462!
-        Me.Remarks_LS_C.HeaderText = "Remarks"
-        Me.Remarks_LS_C.Name = "Remarks_LS_C"
-        Me.Remarks_LS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Select_SK_R
-        '
-        Me.Select_SK_R.DataPropertyName = "Select"
-        Me.Select_SK_R.FillWeight = 35.93909!
-        Me.Select_SK_R.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Select_SK_R.HeaderText = "Select"
-        Me.Select_SK_R.Name = "Select_SK_R"
-        Me.Select_SK_R.ReadOnly = True
-        '
-        'BSelect_SK_R
-        '
-        Me.BSelect_SK_R.FillWeight = 44.92386!
-        Me.BSelect_SK_R.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BSelect_SK_R.HeaderText = "Select"
-        Me.BSelect_SK_R.Name = "BSelect_SK_R"
-        '
-        'ItemCode_SK_R
-        '
-        Me.ItemCode_SK_R.DataPropertyName = "U_ItemCode"
-        Me.ItemCode_SK_R.HeaderText = "Item Code"
-        Me.ItemCode_SK_R.Name = "ItemCode_SK_R"
-        Me.ItemCode_SK_R.ReadOnly = True
-        Me.ItemCode_SK_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.ItemCode_SK_R.Visible = False
-        '
-        'ItemName_SK_R
-        '
-        Me.ItemName_SK_R.DataPropertyName = "U_ItemName"
-        Me.ItemName_SK_R.FillWeight = 89.84772!
-        Me.ItemName_SK_R.HeaderText = "Item Name"
-        Me.ItemName_SK_R.Name = "ItemName_SK_R"
-        Me.ItemName_SK_R.ReadOnly = True
-        Me.ItemName_SK_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Quantity_SK_R
-        '
-        Me.Quantity_SK_R.DataPropertyName = "Qty"
-        DataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle45.Format = "N2"
-        DataGridViewCellStyle45.NullValue = "0"
-        Me.Quantity_SK_R.DefaultCellStyle = DataGridViewCellStyle45
-        Me.Quantity_SK_R.FillWeight = 89.84772!
-        Me.Quantity_SK_R.HeaderText = "Quantity"
-        Me.Quantity_SK_R.Name = "Quantity_SK_R"
-        Me.Quantity_SK_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Dislike_SK_R
-        '
-        Me.Dislike_SK_R.DataPropertyName = "U_Dislike"
-        DataGridViewCellStyle46.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.Red
-        Me.Dislike_SK_R.DefaultCellStyle = DataGridViewCellStyle46
-        Me.Dislike_SK_R.FillWeight = 89.84772!
-        Me.Dislike_SK_R.HeaderText = "Dislike"
-        Me.Dislike_SK_R.Name = "Dislike_SK_R"
-        Me.Dislike_SK_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Medical_SK_R
-        '
-        Me.Medical_SK_R.DataPropertyName = "U_Medical"
-        DataGridViewCellStyle47.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle47.SelectionForeColor = System.Drawing.Color.Red
-        Me.Medical_SK_R.DefaultCellStyle = DataGridViewCellStyle47
-        Me.Medical_SK_R.FillWeight = 89.84772!
-        Me.Medical_SK_R.HeaderText = "Medical"
-        Me.Medical_SK_R.Name = "Medical_SK_R"
-        Me.Medical_SK_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Remarks_SK_R
-        '
-        Me.Remarks_SK_R.DataPropertyName = "Remarks"
-        DataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle48.NullValue = Nothing
-        Me.Remarks_SK_R.DefaultCellStyle = DataGridViewCellStyle48
-        Me.Remarks_SK_R.FillWeight = 149.7462!
-        Me.Remarks_SK_R.HeaderText = "Remarks"
-        Me.Remarks_SK_R.Name = "Remarks_SK_R"
-        Me.Remarks_SK_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Select_SK_C
-        '
-        Me.Select_SK_C.DataPropertyName = "Select"
-        Me.Select_SK_C.FillWeight = 35.93909!
-        Me.Select_SK_C.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Select_SK_C.HeaderText = "Select"
-        Me.Select_SK_C.Name = "Select_SK_C"
-        Me.Select_SK_C.ReadOnly = True
-        '
-        'BSelect_SK_C
-        '
-        Me.BSelect_SK_C.FillWeight = 44.92386!
-        Me.BSelect_SK_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BSelect_SK_C.HeaderText = "Select"
-        Me.BSelect_SK_C.Name = "BSelect_SK_C"
-        '
-        'ItemCode_SK_C
-        '
-        Me.ItemCode_SK_C.DataPropertyName = "U_ItemCode"
-        Me.ItemCode_SK_C.HeaderText = "Item Code"
-        Me.ItemCode_SK_C.Name = "ItemCode_SK_C"
-        Me.ItemCode_SK_C.ReadOnly = True
-        Me.ItemCode_SK_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.ItemCode_SK_C.Visible = False
-        '
-        'ItemName_SK_C
-        '
-        Me.ItemName_SK_C.DataPropertyName = "U_ItemName"
-        Me.ItemName_SK_C.FillWeight = 89.84772!
-        Me.ItemName_SK_C.HeaderText = "Item Name"
-        Me.ItemName_SK_C.Name = "ItemName_SK_C"
-        Me.ItemName_SK_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Quantity_SK_C
-        '
-        Me.Quantity_SK_C.DataPropertyName = "Qty"
-        DataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle51.Format = "N2"
-        Me.Quantity_SK_C.DefaultCellStyle = DataGridViewCellStyle51
-        Me.Quantity_SK_C.FillWeight = 89.84772!
-        Me.Quantity_SK_C.HeaderText = "Quantity"
-        Me.Quantity_SK_C.Name = "Quantity_SK_C"
-        Me.Quantity_SK_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Dislike_SK_C
-        '
-        Me.Dislike_SK_C.DataPropertyName = "U_Dislike"
-        DataGridViewCellStyle52.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle52.SelectionForeColor = System.Drawing.Color.Red
-        Me.Dislike_SK_C.DefaultCellStyle = DataGridViewCellStyle52
-        Me.Dislike_SK_C.FillWeight = 89.84772!
-        Me.Dislike_SK_C.HeaderText = "Dislike"
-        Me.Dislike_SK_C.Name = "Dislike_SK_C"
-        Me.Dislike_SK_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Medical_SK_C
-        '
-        Me.Medical_SK_C.DataPropertyName = "U_Medical"
-        DataGridViewCellStyle53.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle53.SelectionForeColor = System.Drawing.Color.Red
-        Me.Medical_SK_C.DefaultCellStyle = DataGridViewCellStyle53
-        Me.Medical_SK_C.FillWeight = 89.84772!
-        Me.Medical_SK_C.HeaderText = "Medical"
-        Me.Medical_SK_C.Name = "Medical_SK_C"
-        Me.Medical_SK_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Remarks_SK_C
-        '
-        Me.Remarks_SK_C.DataPropertyName = "Remarks"
-        DataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle54.NullValue = Nothing
-        Me.Remarks_SK_C.DefaultCellStyle = DataGridViewCellStyle54
-        Me.Remarks_SK_C.FillWeight = 149.7462!
-        Me.Remarks_SK_C.HeaderText = "Remarks"
-        Me.Remarks_SK_C.Name = "Remarks_SK_C"
-        Me.Remarks_SK_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Select_DI_R
-        '
-        Me.Select_DI_R.DataPropertyName = "Select"
-        Me.Select_DI_R.FillWeight = 35.37507!
-        Me.Select_DI_R.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Select_DI_R.HeaderText = "Select"
-        Me.Select_DI_R.Name = "Select_DI_R"
-        Me.Select_DI_R.ReadOnly = True
-        '
-        'BSelect_DI_R
-        '
-        Me.BSelect_DI_R.FillWeight = 88.43768!
-        Me.BSelect_DI_R.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BSelect_DI_R.HeaderText = "Select"
-        Me.BSelect_DI_R.Name = "BSelect_DI_R"
-        '
-        'ItemCode_DI_R
-        '
-        Me.ItemCode_DI_R.DataPropertyName = "U_ItemCode"
-        Me.ItemCode_DI_R.HeaderText = "Item Code"
-        Me.ItemCode_DI_R.Name = "ItemCode_DI_R"
-        Me.ItemCode_DI_R.ReadOnly = True
-        Me.ItemCode_DI_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.ItemCode_DI_R.Visible = False
-        '
-        'ItemName_DI_R
-        '
-        Me.ItemName_DI_R.DataPropertyName = "U_ItemName"
-        Me.ItemName_DI_R.FillWeight = 88.43768!
-        Me.ItemName_DI_R.HeaderText = "Item Name"
-        Me.ItemName_DI_R.Name = "ItemName_DI_R"
-        Me.ItemName_DI_R.ReadOnly = True
-        Me.ItemName_DI_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Quantity_DI_R
-        '
-        Me.Quantity_DI_R.DataPropertyName = "Qty"
-        DataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle57.Format = "N2"
-        DataGridViewCellStyle57.NullValue = "0"
-        Me.Quantity_DI_R.DefaultCellStyle = DataGridViewCellStyle57
-        Me.Quantity_DI_R.FillWeight = 88.43768!
-        Me.Quantity_DI_R.HeaderText = "Quantity"
-        Me.Quantity_DI_R.Name = "Quantity_DI_R"
-        Me.Quantity_DI_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Dislike_DI_R
-        '
-        Me.Dislike_DI_R.DataPropertyName = "U_Dislike"
-        DataGridViewCellStyle58.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle58.SelectionForeColor = System.Drawing.Color.Red
-        Me.Dislike_DI_R.DefaultCellStyle = DataGridViewCellStyle58
-        Me.Dislike_DI_R.FillWeight = 88.43768!
-        Me.Dislike_DI_R.HeaderText = "Dislike"
-        Me.Dislike_DI_R.Name = "Dislike_DI_R"
-        Me.Dislike_DI_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Medical_DI_R
-        '
-        Me.Medical_DI_R.DataPropertyName = "U_Medical"
-        DataGridViewCellStyle59.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle59.SelectionForeColor = System.Drawing.Color.Red
-        Me.Medical_DI_R.DefaultCellStyle = DataGridViewCellStyle59
-        Me.Medical_DI_R.FillWeight = 88.43768!
-        Me.Medical_DI_R.HeaderText = "Medical"
-        Me.Medical_DI_R.Name = "Medical_DI_R"
-        Me.Medical_DI_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Remarks_DI_R
-        '
-        Me.Remarks_DI_R.DataPropertyName = "Remarks"
-        DataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle60.NullValue = Nothing
-        Me.Remarks_DI_R.DefaultCellStyle = DataGridViewCellStyle60
-        Me.Remarks_DI_R.FillWeight = 162.4366!
-        Me.Remarks_DI_R.HeaderText = "Remarks"
-        Me.Remarks_DI_R.Name = "Remarks_DI_R"
-        Me.Remarks_DI_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Select_DI_C
-        '
-        Me.Select_DI_C.DataPropertyName = "Select"
-        Me.Select_DI_C.FillWeight = 35.93909!
-        Me.Select_DI_C.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Select_DI_C.HeaderText = "Select"
-        Me.Select_DI_C.Name = "Select_DI_C"
-        Me.Select_DI_C.ReadOnly = True
-        '
-        'BSelect_DI_C
-        '
-        Me.BSelect_DI_C.FillWeight = 44.92386!
-        Me.BSelect_DI_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BSelect_DI_C.HeaderText = "Select"
-        Me.BSelect_DI_C.Name = "BSelect_DI_C"
-        '
-        'ItemCode_DI_C
-        '
-        Me.ItemCode_DI_C.DataPropertyName = "U_ItemCode"
-        Me.ItemCode_DI_C.HeaderText = "Item Code"
-        Me.ItemCode_DI_C.Name = "ItemCode_DI_C"
-        Me.ItemCode_DI_C.ReadOnly = True
-        Me.ItemCode_DI_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.ItemCode_DI_C.Visible = False
-        '
-        'ItemName_DI_C
-        '
-        Me.ItemName_DI_C.DataPropertyName = "U_ItemName"
-        Me.ItemName_DI_C.FillWeight = 89.84772!
-        Me.ItemName_DI_C.HeaderText = "Item Name"
-        Me.ItemName_DI_C.Name = "ItemName_DI_C"
-        Me.ItemName_DI_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Quantity_DI_C
-        '
-        Me.Quantity_DI_C.DataPropertyName = "Qty"
-        DataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle63.Format = "N2"
-        Me.Quantity_DI_C.DefaultCellStyle = DataGridViewCellStyle63
-        Me.Quantity_DI_C.FillWeight = 89.84772!
-        Me.Quantity_DI_C.HeaderText = "Quantity"
-        Me.Quantity_DI_C.Name = "Quantity_DI_C"
-        Me.Quantity_DI_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Dislike_DI_C
-        '
-        Me.Dislike_DI_C.DataPropertyName = "U_Dislike"
-        DataGridViewCellStyle64.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle64.SelectionForeColor = System.Drawing.Color.Red
-        Me.Dislike_DI_C.DefaultCellStyle = DataGridViewCellStyle64
-        Me.Dislike_DI_C.FillWeight = 89.84772!
-        Me.Dislike_DI_C.HeaderText = "Dislike"
-        Me.Dislike_DI_C.Name = "Dislike_DI_C"
-        Me.Dislike_DI_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Medical_DI_C
-        '
-        Me.Medical_DI_C.DataPropertyName = "U_Medical"
-        DataGridViewCellStyle65.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle65.SelectionForeColor = System.Drawing.Color.Red
-        Me.Medical_DI_C.DefaultCellStyle = DataGridViewCellStyle65
-        Me.Medical_DI_C.FillWeight = 89.84772!
-        Me.Medical_DI_C.HeaderText = "Medical"
-        Me.Medical_DI_C.Name = "Medical_DI_C"
-        Me.Medical_DI_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Remarks_DI_C
-        '
-        Me.Remarks_DI_C.DataPropertyName = "Remarks"
-        DataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle66.NullValue = Nothing
-        Me.Remarks_DI_C.DefaultCellStyle = DataGridViewCellStyle66
-        Me.Remarks_DI_C.FillWeight = 149.7462!
-        Me.Remarks_DI_C.HeaderText = "Remarks"
-        Me.Remarks_DI_C.Name = "Remarks_DI_C"
-        Me.Remarks_DI_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Select_DS_R
-        '
-        Me.Select_DS_R.DataPropertyName = "Select"
-        Me.Select_DS_R.FillWeight = 19.14401!
-        Me.Select_DS_R.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Select_DS_R.HeaderText = "Select"
-        Me.Select_DS_R.Name = "Select_DS_R"
-        Me.Select_DS_R.ReadOnly = True
-        '
-        'BSelect_DS_R
-        '
-        Me.BSelect_DS_R.FillWeight = 47.86003!
-        Me.BSelect_DS_R.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BSelect_DS_R.HeaderText = "Select"
-        Me.BSelect_DS_R.Name = "BSelect_DS_R"
-        '
-        'ItemCode_DS_R
-        '
-        Me.ItemCode_DS_R.DataPropertyName = "U_ItemCode"
-        Me.ItemCode_DS_R.HeaderText = "Item Code"
-        Me.ItemCode_DS_R.Name = "ItemCode_DS_R"
-        Me.ItemCode_DS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.ItemCode_DS_R.Visible = False
-        '
-        'ItemName_DS_R
-        '
-        Me.ItemName_DS_R.DataPropertyName = "U_ItemName"
-        Me.ItemName_DS_R.FillWeight = 47.86003!
-        Me.ItemName_DS_R.HeaderText = "Item Name"
-        Me.ItemName_DS_R.Name = "ItemName_DS_R"
-        Me.ItemName_DS_R.ReadOnly = True
-        Me.ItemName_DS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Quantity_DS_R
-        '
-        Me.Quantity_DS_R.DataPropertyName = "Qty"
-        DataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle69.Format = "N2"
-        DataGridViewCellStyle69.NullValue = "0"
-        Me.Quantity_DS_R.DefaultCellStyle = DataGridViewCellStyle69
-        Me.Quantity_DS_R.FillWeight = 31.28463!
-        Me.Quantity_DS_R.HeaderText = "Quantity"
-        Me.Quantity_DS_R.Name = "Quantity_DS_R"
-        Me.Quantity_DS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Dislike_DS_R
-        '
-        Me.Dislike_DS_R.DataPropertyName = "U_Dislike"
-        DataGridViewCellStyle70.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle70.SelectionForeColor = System.Drawing.Color.Red
-        Me.Dislike_DS_R.DefaultCellStyle = DataGridViewCellStyle70
-        Me.Dislike_DS_R.FillWeight = 47.86003!
-        Me.Dislike_DS_R.HeaderText = "Dislike"
-        Me.Dislike_DS_R.Name = "Dislike_DS_R"
-        Me.Dislike_DS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Medical_DS_R
-        '
-        Me.Medical_DS_R.DataPropertyName = "U_Medical"
-        DataGridViewCellStyle71.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle71.SelectionForeColor = System.Drawing.Color.Red
-        Me.Medical_DS_R.DefaultCellStyle = DataGridViewCellStyle71
-        Me.Medical_DS_R.FillWeight = 47.86003!
-        Me.Medical_DS_R.HeaderText = "Medical"
-        Me.Medical_DS_R.Name = "Medical_DS_R"
-        Me.Medical_DS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Remarks_DS_R
-        '
-        Me.Remarks_DS_R.DataPropertyName = "Remarks"
-        DataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle72.NullValue = Nothing
-        Me.Remarks_DS_R.DefaultCellStyle = DataGridViewCellStyle72
-        Me.Remarks_DS_R.FillWeight = 82.26828!
-        Me.Remarks_DS_R.HeaderText = "Remarks"
-        Me.Remarks_DS_R.Name = "Remarks_DS_R"
-        Me.Remarks_DS_R.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Select_DS_C
-        '
-        Me.Select_DS_C.DataPropertyName = "Select"
-        Me.Select_DS_C.FillWeight = 34.94146!
-        Me.Select_DS_C.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Select_DS_C.HeaderText = "Select"
-        Me.Select_DS_C.Name = "Select_DS_C"
-        '
-        'BSelect_DS_C
-        '
-        Me.BSelect_DS_C.FillWeight = 43.67682!
-        Me.BSelect_DS_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BSelect_DS_C.HeaderText = "Select"
-        Me.BSelect_DS_C.Name = "BSelect_DS_C"
-        '
-        'ItemCode_DS_C
-        '
-        Me.ItemCode_DS_C.DataPropertyName = "U_ItemCode"
-        Me.ItemCode_DS_C.HeaderText = "Item Code"
-        Me.ItemCode_DS_C.Name = "ItemCode_DS_C"
-        Me.ItemCode_DS_C.ReadOnly = True
-        Me.ItemCode_DS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.ItemCode_DS_C.Visible = False
-        '
-        'ItemName_DS_C
-        '
-        Me.ItemName_DS_C.DataPropertyName = "U_ItemName"
-        Me.ItemName_DS_C.FillWeight = 87.35363!
-        Me.ItemName_DS_C.HeaderText = "Item Name"
-        Me.ItemName_DS_C.Name = "ItemName_DS_C"
-        Me.ItemName_DS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Quantity_DS_C
-        '
-        Me.Quantity_DS_C.DataPropertyName = "Qty"
-        DataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle75.Format = "N2"
-        Me.Quantity_DS_C.DefaultCellStyle = DataGridViewCellStyle75
-        Me.Quantity_DS_C.FillWeight = 51.07209!
-        Me.Quantity_DS_C.HeaderText = "Quantity"
-        Me.Quantity_DS_C.Name = "Quantity_DS_C"
-        Me.Quantity_DS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Dislike_DS_C
-        '
-        Me.Dislike_DS_C.DataPropertyName = "U_Dislike"
-        DataGridViewCellStyle76.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle76.SelectionForeColor = System.Drawing.Color.Red
-        Me.Dislike_DS_C.DefaultCellStyle = DataGridViewCellStyle76
-        Me.Dislike_DS_C.FillWeight = 87.35363!
-        Me.Dislike_DS_C.HeaderText = "Dislike"
-        Me.Dislike_DS_C.Name = "Dislike_DS_C"
-        Me.Dislike_DS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Medical_DS_C
-        '
-        Me.Medical_DS_C.DataPropertyName = "U_Medical"
-        DataGridViewCellStyle77.ForeColor = System.Drawing.Color.Red
-        DataGridViewCellStyle77.SelectionForeColor = System.Drawing.Color.Red
-        Me.Medical_DS_C.DefaultCellStyle = DataGridViewCellStyle77
-        Me.Medical_DS_C.FillWeight = 87.35363!
-        Me.Medical_DS_C.HeaderText = "Medical"
-        Me.Medical_DS_C.Name = "Medical_DS_C"
-        Me.Medical_DS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Remarks_DS_C
-        '
-        Me.Remarks_DS_C.DataPropertyName = "Remarks"
-        DataGridViewCellStyle78.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle78.NullValue = Nothing
-        Me.Remarks_DS_C.DefaultCellStyle = DataGridViewCellStyle78
-        Me.Remarks_DS_C.FillWeight = 133.2487!
-        Me.Remarks_DS_C.HeaderText = "Remarks"
-        Me.Remarks_DS_C.Name = "Remarks_DS_C"
-        Me.Remarks_DS_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(133, 22)
+        Me.ToolStripMenuItem6.Text = "Delete Row"
         '
         'PSWizard
         '
@@ -2873,6 +2966,7 @@ Partial Class PSWizard
         Me.scBF.ResumeLayout(False)
         CType(Me.dgv_BF_R, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgv_BF_C, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.cmsMenu_BF.ResumeLayout(False)
         Me.tpLunch.ResumeLayout(False)
         Me.scLunch.Panel1.ResumeLayout(False)
         Me.scLunch.Panel2.ResumeLayout(False)
@@ -2920,6 +3014,11 @@ Partial Class PSWizard
         Me.sc_Missed_Clients_0.ResumeLayout(False)
         CType(Me.dgv_MissedClients, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.cms_Menu_LN.ResumeLayout(False)
+        Me.cms_Menu_LS.ResumeLayout(False)
+        Me.cms_Menu_SK.ResumeLayout(False)
+        Me.cms_Menu_DN.ResumeLayout(False)
+        Me.cms_Menu_DS.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -3116,5 +3215,17 @@ Partial Class PSWizard
     Friend WithEvents Dislike_DS_C As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Medical_DS_C As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Remarks_DS_C As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents cmsMenu_BF As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents ToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents cms_Menu_LN As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents ToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents cms_Menu_LS As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents ToolStripMenuItem3 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents cms_Menu_SK As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents ToolStripMenuItem4 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents cms_Menu_DN As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents ToolStripMenuItem5 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents cms_Menu_DS As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents ToolStripMenuItem6 As System.Windows.Forms.ToolStripMenuItem
 
 End Class

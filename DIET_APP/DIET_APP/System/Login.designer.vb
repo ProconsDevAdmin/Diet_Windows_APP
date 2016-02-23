@@ -403,10 +403,10 @@ Partial Class Login
         Me.Label3.ForeColor = System.Drawing.Color.MidnightBlue
         Me.Label3.Location = New System.Drawing.Point(3, 5)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(152, 15)
+        Me.Label3.Size = New System.Drawing.Size(150, 15)
         Me.Label3.TabIndex = 3
         Me.Label3.Tag = "1"
-        Me.Label3.Text = "Build Date : 08- Dec - 2015"
+        Me.Label3.Text = "Build Date : 20- Jan - 2016"
         '
         'Label2
         '

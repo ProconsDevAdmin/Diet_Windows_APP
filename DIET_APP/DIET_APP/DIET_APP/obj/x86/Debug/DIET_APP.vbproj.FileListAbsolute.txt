@@ -19,3 +19,8 @@ C:\Users\LENOVO\Desktop\DIET_APP\DIET_APP\bin\Debug\UXUTIL.dll
 C:\Users\LENOVO\Desktop\DIET_APP\DIET_APP\bin\Debug\UXUTIL.pdb
 C:\Users\LENOVO\Desktop\DIET_APP\DIET_APP\bin\Debug\UXUTIL.xml
 C:\Users\LENOVO\Desktop\DIET_APP\DIET_APP\obj\x86\Debug\DIET_APP.frmCFL.resources
+D:\Project\procons4it\DIET\DIET_APP\DIET_APP_LATEST\DIET_APP\DIET_APP\DIET_APP\bin\Debug\DIET_APP.exe.config
+D:\Project\procons4it\DIET\DIET_APP\DIET_APP_LATEST\DIET_APP\DIET_APP\DIET_APP\obj\x86\Debug\Interop.SAPbobsCOM.dll
+D:\Project\procons4it\DIET\DIET_APP\DIET_APP_LATEST\DIET_APP\DIET_APP\DIET_APP\obj\x86\Debug\DIET_APP.vbproj.ResolveComReference.cache
+D:\Project\procons4it\DIET\DIET_APP\DIET_APP_LATEST\DIET_APP\DIET_APP\DIET_APP\obj\x86\Debug\DIET_APP.xml
+D:\Project\procons4it\DIET\DIET_APP\DIET_APP_LATEST\DIET_APP\DIET_APP\DIET_APP\obj\x86\Debug\DIET_APP.pdb
